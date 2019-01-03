@@ -2,6 +2,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { LoginComponent } from './login/login.component';
+import { AppRoutingModule } from './app-routing.module';
+import { RouterModule, Routes } from '@angular/router';
+
+const routes : Routes = []
 
 import {
   MatAutocompleteModule,
@@ -40,14 +45,15 @@ import {
   MatTooltipModule,
   MatTreeModule,
 } from '@angular/material';
-import { AccueilComponent } from './accueil/accueil.component';
-import {AppRoutingModule} from "./app-routing.module";
+import {AccueilComponent} from "./accueil/accueil.component";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    AccueilComponent
+    AccueilComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
@@ -88,7 +94,8 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
     MatToolbarModule,
     MatTooltipModule,
     MatTreeModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    RouterModule.forRoot(routes, { useHash: true }),
   ],
   providers: [],
   bootstrap: [AppComponent]
