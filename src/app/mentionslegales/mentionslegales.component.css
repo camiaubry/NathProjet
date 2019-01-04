@@ -1,0 +1,12 @@
+
+.container 		{
+  font-family:'arial';
+  width:900px;
+  margin:20px auto 0;
+  padding:10px 50px 50px;
+  background-color:DarkTurquoise;
+  opacity: 0.7;
+  border-radius: 20px;
+
+}
+
