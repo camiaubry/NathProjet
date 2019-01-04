@@ -47,6 +47,8 @@ import {
 } from '@angular/material';
 import {AccueilComponent} from "./accueil/accueil.component";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import { InscriptionComponent } from './inscription/inscription.component';
+import { MpoublierComponent } from './mpoublier/mpoublier.component';
 
 
 @NgModule({
@@ -54,6 +56,8 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
     AppComponent,
     AccueilComponent,
     LoginComponent,
+    InscriptionComponent,
+    MpoublierComponent,
   ],
   imports: [
     BrowserModule,
