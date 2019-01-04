@@ -49,6 +49,8 @@ import {AccueilComponent} from "./accueil/accueil.component";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import { InscriptionComponent } from './inscription/inscription.component';
 import { MpoublierComponent } from './mpoublier/mpoublier.component';
+import { MentionslegalesComponent } from './mentionslegales/mentionslegales.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -58,6 +60,8 @@ import { MpoublierComponent } from './mpoublier/mpoublier.component';
     LoginComponent,
     InscriptionComponent,
     MpoublierComponent,
+    MentionslegalesComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

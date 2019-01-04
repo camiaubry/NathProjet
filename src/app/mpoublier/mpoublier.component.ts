@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MpoublierComponent implements OnInit {
 
-  constructor() { }
+  emailError: boolean=false
+  emailConfirm: boolean=false
+
+  constructor() {}
 
   ngOnInit() {
   }
 
+  valider() {
+    this.emailError=true;
+  }
 }
