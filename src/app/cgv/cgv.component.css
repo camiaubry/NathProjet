@@ -1,4 +1,21 @@
-.img {
+
+
+.container 		{
+    font-family:'arial';
+    width:70%;
+    height: 75%;
+    margin:80px auto 0;
+    margin-left:7%;
+    padding:10px 50px 50px;
+    background-color:DarkTurquoise;
+    opacity: 0.7;
+    border-radius: 20px;
+    overflow-y:scroll;
+  
+  
+  }
+  
+  .img {
     width: 110%;
     height:100%;
     top: 0;
@@ -12,4 +29,5 @@
     background-size:  cover;
     background-image: url(src\assets\imgs2\accueil-mixte.png);
   }
-
+  
+  

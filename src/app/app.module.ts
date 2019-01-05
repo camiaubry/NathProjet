@@ -52,6 +52,8 @@ import { MpoublierComponent } from './mpoublier/mpoublier.component';
 import { MentionslegalesComponent } from './mentionslegales/mentionslegales.component';
 import { FooterComponent } from './footer/footer.component';
 import { MenuComponent } from './menu/menu.component';
+import { CgvComponent } from './cgv/cgv.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
@@ -64,6 +66,8 @@ import { MenuComponent } from './menu/menu.component';
     MentionslegalesComponent,
     FooterComponent,
     MenuComponent,
+    CgvComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,

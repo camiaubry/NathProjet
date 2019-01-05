@@ -27,7 +27,8 @@
 .input input {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
     border: medium none;
-    height: 60px;
+    height: 70px;
+    width: 100%;
     top: 10px;
 }
 .input input, .input label, .button button {
@@ -61,7 +62,7 @@
     width: 60%;
 }
 .button.login button, .button button {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: #25274d;
     border-radius: 50px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
     color: rgb(255, 255, 255);
@@ -168,11 +169,11 @@
 
 .container 		{
   font-family:'arial';
-  width:600px;
-  margin:30px auto 0;
-  display:block;
+  width:40%;
+  margin:100px auto 0;
+  margin-left:25%;
   background:#FFF;
-  padding:10px 50px 50px;
+  padding:2% 5% 1%;
   background-color:DarkTurquoise;
   opacity: 0.7;
   border-radius: 20px;
@@ -190,7 +191,7 @@ input 				{
   font-size:18px;
   padding:10px 10px 10px 5px;
   display:block;
-  width:500px;
+  width:100%;
   border:none;
   border-bottom:1px solid black;
 
@@ -286,3 +287,19 @@ input:focus ~ .highlight {
     font-weight:bold;
     color: DarkRed;
 }
+
+.img {
+    width: 110%;
+    height:100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    background-position: center center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size:  cover;
+    background-image: url(src\assets\imgs2\accueil-mixte.png);
+  }
+
