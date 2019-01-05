@@ -230,3 +230,17 @@ body {
   text-decoration: none;
   width: 100%;
 }
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.btn-color{
+  background-color:DarkTurquoise ;
+  margin-right:5%;
+}
+
+.bouton {
+  margin-left:90%;
+  margin-top:0.5%;
+}

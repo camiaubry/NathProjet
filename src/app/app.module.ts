@@ -54,7 +54,6 @@ import { FooterComponent } from './footer/footer.component';
 import { MenuComponent } from './menu/menu.component';
 import { CgvComponent } from './cgv/cgv.component';
 import { ContactComponent } from './contact/contact.component';
-import { ToolbarComponent } from './toolbar/toolbar.component';
 
 
 @NgModule({
@@ -69,7 +68,6 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
     MenuComponent,
     CgvComponent,
     ContactComponent,
-    ToolbarComponent,
   ],
   imports: [
     BrowserModule,
