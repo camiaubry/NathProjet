@@ -7,14 +7,18 @@ import { InscriptionComponent } from './inscription/inscription.component';
 import { MpoublierComponent } from './mpoublier/mpoublier.component';
 import { MentionslegalesComponent } from './mentionslegales/mentionslegales.component';
 import { FooterComponent } from './footer/footer.component';
+import { CgvComponent } from './cgv/cgv.component';
+import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
   { path: 'accueil', component: AccueilComponent },
   { path: 'login', component: LoginComponent },
   { path: 'inscription', component: InscriptionComponent },
-  { path: 'mpoublier', component: MpoublierComponent },
+  { path: 'motdepasseoublier', component: MpoublierComponent },
   { path: 'mentionslegales', component: MentionslegalesComponent },
+  { path: 'cgv', component: CgvComponent },
   { path: 'footer', component: FooterComponent },
+  { path: 'contact', component: ContactComponent },
 
 ];
 
