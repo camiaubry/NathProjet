@@ -10,6 +10,7 @@ import { FooterComponent } from './footer/footer.component';
 import { CgvComponent } from './cgv/cgv.component';
 import { ContactComponent } from './contact/contact.component';
 import { AdminAddArticleComponent } from './admin-add-article/admin-add-article.component';
+import { AdminListeCommandeComponent } from './admin-liste-commande/admin-liste-commande.component';
 
 const routes: Routes = [
   { path: 'accueil', component: AccueilComponent },
@@ -21,6 +22,8 @@ const routes: Routes = [
   { path: 'footer', component: FooterComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'admin-add-article', component: AdminAddArticleComponent },
+  { path: 'admin-liste-commande', component: AdminListeCommandeComponent },
+
 
 ];
 

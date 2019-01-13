@@ -55,6 +55,7 @@ import { MenuComponent } from './menu/menu.component';
 import { CgvComponent } from './cgv/cgv.component';
 import { ContactComponent } from './contact/contact.component';
 import { AdminAddArticleComponent } from './admin-add-article/admin-add-article.component';
+import { AdminListeCommandeComponent } from './admin-liste-commande/admin-liste-commande.component';
 
 
 @NgModule({
@@ -70,6 +71,7 @@ import { AdminAddArticleComponent } from './admin-add-article/admin-add-article.
     CgvComponent,
     ContactComponent,
     AdminAddArticleComponent,
+    AdminListeCommandeComponent,
   ],
   imports: [
     BrowserModule,
