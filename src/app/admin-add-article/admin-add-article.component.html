@@ -1,0 +1,91 @@
+<div class="img">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+
+    <div class="materialContainer">
+        <div class="panel panel-primary">
+            <div id="collapseOne" class="panel-collapse collapse in">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Titre" required />
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" placeholder="Description" rows="5" required></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="category">
+                                    Catégories</label>
+                                <select class="form-control" id="category">
+                                    <option>Haut</option>
+                                    <option>Bas</option>
+                                    <option>Accessoires</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="tags">
+                                    Référence</label>
+                                <input type="text" class="form-control" id="tags" placeholder="Tags" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="category">
+                                    Age</label>
+                                <select class="form-control" id="category">
+                                    <option>0-3 mois</option>
+                                    <option>0-6 mois</option>
+                                    <option>6-9 mois</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="tags">
+                                    Prix</label>
+                                <input type="text" class="form-control" id="prix" placeholder="Prix" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="well well-sm well-primary">
+                            <div class="input-group image-preview">
+                                <input type="text" class="form-control image-preview-filename" disabled="disabled">
+                                <!-- don't give a name === doesn't send on POST/GET -->
+                                <span class="input-group-btn">
+                                    <!-- image-preview-clear button -->
+                                    <button type="button" class="btn btn-default image-preview-clear" style="display:none;">
+                                        <span class="glyphicon glyphicon-remove"></span> Clear
+                                    </button>
+                                    <!-- image-preview-input -->
+                                    <div class="btn btn-default image-preview-input">
+                                        <span class="glyphicon glyphicon-folder-open"></span>
+                                        <span class="image-preview-input-title">Browse</span>
+                                        <input type="file" accept="image/png, image/jpeg, image/gif" name="input-file-preview" />
+                                        <!-- rename it -->
+                                    </div>
+                                </span>
+                            </div>
+                            <!-- /input-group image-preview [TO HERE]-->
+                        </div>
+                        <div class="button login form-group">
+                            <button type="submit" class="btn btn-default">Valider</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -54,6 +54,7 @@ import { FooterComponent } from './footer/footer.component';
 import { MenuComponent } from './menu/menu.component';
 import { CgvComponent } from './cgv/cgv.component';
 import { ContactComponent } from './contact/contact.component';
+import { AdminAddArticleComponent } from './admin-add-article/admin-add-article.component';
 
 
 @NgModule({
@@ -68,6 +69,7 @@ import { ContactComponent } from './contact/contact.component';
     MenuComponent,
     CgvComponent,
     ContactComponent,
+    AdminAddArticleComponent,
   ],
   imports: [
     BrowserModule,

@@ -9,6 +9,7 @@ import { MentionslegalesComponent } from './mentionslegales/mentionslegales.comp
 import { FooterComponent } from './footer/footer.component';
 import { CgvComponent } from './cgv/cgv.component';
 import { ContactComponent } from './contact/contact.component';
+import { AdminAddArticleComponent } from './admin-add-article/admin-add-article.component';
 
 const routes: Routes = [
   { path: 'accueil', component: AccueilComponent },
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'cgv', component: CgvComponent },
   { path: 'footer', component: FooterComponent },
   { path: 'contact', component: ContactComponent },
+  { path: 'admin-add-article', component: AdminAddArticleComponent },
 
 ];
 
