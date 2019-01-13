@@ -72,12 +72,12 @@ background-color: DarkTurquoise;
   }
 
   .materialContainer {
-    left: 50%;
-    max-width: 460px;
+    left: 45%;
+    max-width: 500px;
     position: absolute;
-    top: 50%;
+    top:51%;
     transform: translate(-50%, -50%);
-    width: 100%;
+    width: 30%;
     background-color:DarkTurquoise;
     opacity: 0.8;
     border-radius: 20px;
