@@ -56,6 +56,8 @@ import { CgvComponent } from './cgv/cgv.component';
 import { ContactComponent } from './contact/contact.component';
 import { AdminAddArticleComponent } from './admin-add-article/admin-add-article.component';
 import { AdminListeCommandeComponent } from './admin-liste-commande/admin-liste-commande.component';
+import { QuisuisjeComponent } from './quisuisje/quisuisje.component';
+import { RenouvellementmpComponent } from './renouvellementmp/renouvellementmp.component';
 
 
 @NgModule({
@@ -72,6 +74,8 @@ import { AdminListeCommandeComponent } from './admin-liste-commande/admin-liste-
     ContactComponent,
     AdminAddArticleComponent,
     AdminListeCommandeComponent,
+    QuisuisjeComponent,
+    RenouvellementmpComponent,
   ],
   imports: [
     BrowserModule,

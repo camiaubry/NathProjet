@@ -11,6 +11,8 @@ import { CgvComponent } from './cgv/cgv.component';
 import { ContactComponent } from './contact/contact.component';
 import { AdminAddArticleComponent } from './admin-add-article/admin-add-article.component';
 import { AdminListeCommandeComponent } from './admin-liste-commande/admin-liste-commande.component';
+import { QuisuisjeComponent } from './quisuisje/quisuisje.component';
+import { RenouvellementmpComponent } from './renouvellementmp/renouvellementmp.component';
 
 const routes: Routes = [
   { path: 'accueil', component: AccueilComponent },
@@ -23,8 +25,8 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'admin-add-article', component: AdminAddArticleComponent },
   { path: 'admin-liste-commande', component: AdminListeCommandeComponent },
-
-
+  { path: 'quisuisje', component: QuisuisjeComponent },
+  { path: 'renouvellementmp', component: RenouvellementmpComponent },
 ];
 
 @NgModule({
