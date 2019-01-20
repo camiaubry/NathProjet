@@ -55,6 +55,8 @@ import { MenuComponent } from './menu/menu.component';
 import { CgvComponent } from './cgv/cgv.component';
 import { ContactComponent } from './contact/contact.component';
 
+import { FormsModule } from '@angular/forms';
+import {LoginService} from "./service/login/login.service";
 
 @NgModule({
   declarations: [
@@ -71,6 +73,7 @@ import { ContactComponent } from './contact/contact.component';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     MatToolbarModule,
     AppRoutingModule,
     MatAutocompleteModule,
@@ -111,7 +114,9 @@ import { ContactComponent } from './contact/contact.component';
     BrowserAnimationsModule,
     RouterModule.forRoot(routes, { useHash: true }),
   ],
-  providers: [],
+  providers: [
+    LoginService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

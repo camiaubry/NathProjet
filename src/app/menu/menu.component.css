@@ -244,3 +244,7 @@ body {
   margin-left:90%;
   margin-top:0.5%;
 }
+
+.mat-menu-content {
+  background-color: 'red' !important;
+}
