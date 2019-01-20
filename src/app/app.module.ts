@@ -58,6 +58,7 @@ import { AdminAddArticleComponent } from './admin-add-article/admin-add-article.
 import { AdminListeCommandeComponent } from './admin-liste-commande/admin-liste-commande.component';
 import { QuisuisjeComponent } from './quisuisje/quisuisje.component';
 import { RenouvellementmpComponent } from './renouvellementmp/renouvellementmp.component';
+import { AvisComponent } from './avis/avis.component';
 
 
 @NgModule({
@@ -76,6 +77,7 @@ import { RenouvellementmpComponent } from './renouvellementmp/renouvellementmp.c
     AdminListeCommandeComponent,
     QuisuisjeComponent,
     RenouvellementmpComponent,
+    AvisComponent,
   ],
   imports: [
     BrowserModule,

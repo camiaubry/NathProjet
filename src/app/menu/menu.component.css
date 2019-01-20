@@ -216,7 +216,7 @@
 }
 
 .header-nav ul li a {
-  color: rgba(0, 0, 0, 0.79);
+  color:white;
   display: block;
   float: left;
   font-size: 14px;
@@ -244,3 +244,117 @@
   margin-left:90%;
   margin-top:0.5%;
 } 
+
+p {
+  font-weight:bold;
+}
+
+.button-search{
+  padding-top: 10px;
+  display: inline-block;
+  position: relative;
+  margin-left : 10px;
+  
+}
+
+.filter-button-search{
+  padding-top: 10px;
+  display: inline-block;
+  position: relative;
+}
+
+
+/* .filter-bar-search.pull-left{
+  top:0;
+  background-color: #53aaed;
+  color:white;
+  margin-right: 5px;
+  } */
+  
+  .filter-bar-search{
+   display: inline-block;
+   background-color: white;
+   height: 60px;
+   width:350px;
+   line-height: 40px;
+   border-radius: 100px;
+   box-shadow: none;
+   padding:0;
+   position: static;
+   margin-left: 20px;
+   float: right;
+ }
+
+ .mat-mini-fab {
+   margin-right:7px;
+  background-color:DarkTurquoise ;
+ }
+
+ .valider{
+  background-color:#25274d;
+  border-radius: 50px;
+  box-shadow: 2px 5px 2px rgba(0, 0, 0, 0.15);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+
+ }
+
+ h3 {
+margin-right:30px;
+ }
+
+
+ /* barre de recherche */
+
+
+ body,html{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: darkturquoise !important;
+  }
+
+  .searchbar{
+  margin-bottom: auto;
+  margin-top: auto;
+  margin-right:550px;
+  height: 50px;
+  background-color: darkturquoise;
+  border-radius: 30px;
+  padding: 10px;
+  }
+
+  .search_input{
+  color: white;
+  border: 0;
+  outline: 0;
+  background: none;
+  width: 0;
+  caret-color:transparent;
+  line-height: 40px;
+  transition: width 0.4s linear;
+  }
+
+  .searchbar:hover > .search_input{
+  padding: 0 10px;
+  width: 450px;
+  caret-color:darkturquoise;
+  transition: width 0.4s linear;
+  }
+
+  .searchbar:hover > .search_icon{
+  background: white;
+  color: darkturquoise;
+  }
+
+  .search_icon{
+  height: 30px;
+  width: 30px;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color:white;
+  }

@@ -9,6 +9,8 @@ import {MediaMatcher} from '@angular/cdk/layout';
 })
 export class MenuComponent implements OnInit {
 
+  isCollapsed : boolean = false;
+  
   ngOnInit() {
   }
 
@@ -25,6 +27,10 @@ export class MenuComponent implements OnInit {
   }
   ngOnDestroy(): void {
     this.mobileQuery.removeListener(this._mobileQueryListener);
+  }
+
+  toggleSearch(){
+    this.isCollapsed = !this.isCollapsed;
   }
 
 }

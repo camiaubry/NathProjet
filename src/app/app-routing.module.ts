@@ -13,6 +13,7 @@ import { AdminAddArticleComponent } from './admin-add-article/admin-add-article.
 import { AdminListeCommandeComponent } from './admin-liste-commande/admin-liste-commande.component';
 import { QuisuisjeComponent } from './quisuisje/quisuisje.component';
 import { RenouvellementmpComponent } from './renouvellementmp/renouvellementmp.component';
+import { AvisComponent } from './avis/avis.component';
 
 const routes: Routes = [
   { path: 'accueil', component: AccueilComponent },
@@ -27,6 +28,7 @@ const routes: Routes = [
   { path: 'admin-liste-commande', component: AdminListeCommandeComponent },
   { path: 'quisuisje', component: QuisuisjeComponent },
   { path: 'renouvellementmp', component: RenouvellementmpComponent },
+  { path: 'avis', component: AvisComponent },
 ];
 
 @NgModule({
