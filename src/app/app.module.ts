@@ -54,6 +54,11 @@ import { FooterComponent } from './footer/footer.component';
 import { MenuComponent } from './menu/menu.component';
 import { CgvComponent } from './cgv/cgv.component';
 import { ContactComponent } from './contact/contact.component';
+import { AdminAddArticleComponent } from './admin-add-article/admin-add-article.component';
+import { AdminListeCommandeComponent } from './admin-liste-commande/admin-liste-commande.component';
+import { QuisuisjeComponent } from './quisuisje/quisuisje.component';
+import { RenouvellementmpComponent } from './renouvellementmp/renouvellementmp.component';
+import { AvisComponent } from './avis/avis.component';
 
 import { FormsModule } from '@angular/forms';
 import {LoginService} from "./service/login/login.service";
@@ -70,6 +75,11 @@ import {LoginService} from "./service/login/login.service";
     MenuComponent,
     CgvComponent,
     ContactComponent,
+    AdminAddArticleComponent,
+    AdminListeCommandeComponent,
+    QuisuisjeComponent,
+    RenouvellementmpComponent,
+    AvisComponent,
   ],
   imports: [
     BrowserModule,

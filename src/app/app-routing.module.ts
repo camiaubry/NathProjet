@@ -9,6 +9,11 @@ import { MentionslegalesComponent } from './mentionslegales/mentionslegales.comp
 import { FooterComponent } from './footer/footer.component';
 import { CgvComponent } from './cgv/cgv.component';
 import { ContactComponent } from './contact/contact.component';
+import { AdminAddArticleComponent } from './admin-add-article/admin-add-article.component';
+import { AdminListeCommandeComponent } from './admin-liste-commande/admin-liste-commande.component';
+import { QuisuisjeComponent } from './quisuisje/quisuisje.component';
+import { RenouvellementmpComponent } from './renouvellementmp/renouvellementmp.component';
+import { AvisComponent } from './avis/avis.component';
 
 const routes: Routes = [
   { path: 'accueil', component: AccueilComponent },
@@ -19,7 +24,11 @@ const routes: Routes = [
   { path: 'cgv', component: CgvComponent },
   { path: 'footer', component: FooterComponent },
   { path: 'contact', component: ContactComponent },
-
+  { path: 'admin-add-article', component: AdminAddArticleComponent },
+  { path: 'admin-liste-commande', component: AdminListeCommandeComponent },
+  { path: 'quisuisje', component: QuisuisjeComponent },
+  { path: 'renouvellementmp', component: RenouvellementmpComponent },
+  { path: 'avis', component: AvisComponent },
 ];
 
 @NgModule({
