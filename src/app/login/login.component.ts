@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {LoginService} from "../service/login/login.service";
+// import {LoginService} from "../service/login/login.service";
 
 @Component({
   selector: 'app-login',
@@ -11,22 +11,22 @@ export class LoginComponent implements OnInit {
   name : string;
   pass : string;
 
-  constructor(public loginService : LoginService) { }
+  // constructor(public loginService : LoginService) { }
 
   ngOnInit() {
   }
 
-  connexion(){
-    // if(this.checkName() && this.checkPass()){
-      this.loginService.getLogin(this.name,this.pass);
-    // }
-  }
+  // connexion(){
+  //   // if(this.checkName() && this.checkPass()){
+  //     this.loginService.getLogin(this.name,this.pass);
+  //   // }
+  // }
 
-  checkName(){
-    return this.name != "" && this.name != undefined
-  }
+  // checkName(){
+  //   return this.name != "" && this.name != undefined
+  // }
 
-  checkPass(){
-    return this.pass != "" && this.pass != undefined
-  }
+  // checkPass(){
+  //   return this.pass != "" && this.pass != undefined
+  // }
 }

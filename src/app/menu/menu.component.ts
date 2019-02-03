@@ -9,27 +9,17 @@ import {MediaMatcher} from '@angular/cdk/layout';
 })
 export class MenuComponent implements OnInit {
 
-<<<<<<< HEAD
-  constructor(){}
-=======
   isCollapsed : boolean = false;
-  
-  ngOnInit() {
-  }
 
   title = 'NathProjet';
 
   mobileQuery: MediaQueryList;
->>>>>>> 8cfafc96f5ab019043bc91a4f206be421a398216
 
   ngOnInit() {
   }
-<<<<<<< HEAD
-=======
 
   toggleSearch(){
     this.isCollapsed = !this.isCollapsed;
   }
 
->>>>>>> 8cfafc96f5ab019043bc91a4f206be421a398216
 }

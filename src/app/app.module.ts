@@ -61,7 +61,7 @@ import { RenouvellementmpComponent } from './renouvellementmp/renouvellementmp.c
 import { AvisComponent } from './avis/avis.component';
 
 import { FormsModule } from '@angular/forms';
-import {LoginService} from "./service/login/login.service";
+// import {LoginService} from "./service/login/login.service";
 
 @NgModule({
   declarations: [
@@ -125,7 +125,7 @@ import {LoginService} from "./service/login/login.service";
     RouterModule.forRoot(routes, { useHash: true }),
   ],
   providers: [
-    LoginService
+    // LoginService
   ],
   bootstrap: [AppComponent]
 })
