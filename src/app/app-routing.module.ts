@@ -14,6 +14,7 @@ import { AdminListeCommandeComponent } from './admin-liste-commande/admin-liste-
 import { QuisuisjeComponent } from './quisuisje/quisuisje.component';
 import { RenouvellementmpComponent } from './renouvellementmp/renouvellementmp.component';
 import { AvisComponent } from './avis/avis.component';
+import { ListeArticleComponent } from './liste-article/liste-article.component';
 
 const routes: Routes = [
   { path: 'accueil', component: AccueilComponent },
@@ -29,6 +30,8 @@ const routes: Routes = [
   { path: 'quisuisje', component: QuisuisjeComponent },
   { path: 'renouvellementmp', component: RenouvellementmpComponent },
   { path: 'avis', component: AvisComponent },
+  { path: 'listearticle', component: ListeArticleComponent},
+
 ];
 
 @NgModule({

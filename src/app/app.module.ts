@@ -63,6 +63,7 @@ import { RenouvellementmpComponent } from './renouvellementmp/renouvellementmp.c
 import { AvisComponent } from './avis/avis.component';
 
 import { FormsModule } from '@angular/forms';
+import { ListeArticleComponent } from './liste-article/liste-article.component';
 // import {LoginService} from "./service/login/login.service";
 
 @NgModule({
@@ -82,6 +83,7 @@ import { FormsModule } from '@angular/forms';
     QuisuisjeComponent,
     RenouvellementmpComponent,
     AvisComponent,
+    ListeArticleComponent,
   ],
   imports: [
     BrowserModule,
