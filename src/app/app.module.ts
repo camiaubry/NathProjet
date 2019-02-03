@@ -5,8 +5,10 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { AppRoutingModule } from './app-routing.module';
 import { RouterModule, Routes } from '@angular/router';
-
 const routes : Routes = []
+
+import 'hammerjs';
+import { NgxHmCarouselModule } from 'ngx-hm-carousel';
 
 import {
   MatAutocompleteModule,
@@ -122,6 +124,7 @@ import { FormsModule } from '@angular/forms';
     MatTooltipModule,
     MatTreeModule,
     BrowserAnimationsModule,
+    NgxHmCarouselModule,
     RouterModule.forRoot(routes, { useHash: true }),
   ],
   providers: [

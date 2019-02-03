@@ -1,54 +1,41 @@
-/*-------------------------------*/
-/*      Code snippet by          */
-/*      @maridlcrmn              */
-/*-------------------------------*/
-
-
-section {
-    padding-top: 100px;
-    padding-bottom: 100px;
+.carousel {
+  color: white;
 }
-
-.quote {
-    color: rgba(0,0,0,.1);
-    text-align: center;
-    margin-bottom: 30px;
+.carousel .content {
+  display: flex;
 }
-
-/*-------------------------------*/
-/*    Carousel Fade Transition   */
-/*-------------------------------*/
-
-#fade-quote-carousel.carousel {
-  padding-bottom: 60px;
+.carousel .content .item {
+  width: 100%;
+  padding: 0.5em;
+  display: block;
+  opacity: 0.5;
+  transition: opacity 0.295s linear 0.2s;
 }
-#fade-quote-carousel.carousel .carousel-inner .item {
-  opacity: 0;
-  -webkit-transition-property: opacity;
-      -ms-transition-property: opacity;
-          transition-property: opacity;
-}
-#fade-quote-carousel.carousel .carousel-inner .active {
+.carousel .content .item.visible {
   opacity: 1;
-  -webkit-transition-property: opacity;
-      -ms-transition-property: opacity;
-          transition-property: opacity;
 }
-#fade-quote-carousel.carousel .carousel-indicators {
-  bottom: 10px;
+.carousel .content .item .img {
+  width: 100%;
+  height: 400px;
+  display: block;
+  background-size: cover;
+  background-position: center;
 }
-#fade-quote-carousel.carousel .carousel-indicators > li {
-  background-color: #e84a64;
-  border: none;
+.carousel .ball {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: black;
+  border: 2px solid;
+  opacity: 0.5;
 }
-#fade-quote-carousel blockquote {
-    text-align: center;
-    border: none;
+.carousel .ball.visible {
+  opacity: 1;
 }
-#fade-quote-carousel .profile-circle {
-    width: 100px;
-    height: 100px;
-    margin: 0 auto;
-    border-radius: 100px;
+.carousel .click-area {
+  width: 50px;
+  text-align: center;
 }
-
+.carousel .click-area i {
+  font-size: 3em;
+}
