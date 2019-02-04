@@ -15,6 +15,8 @@ import { QuisuisjeComponent } from './quisuisje/quisuisje.component';
 import { RenouvellementmpComponent } from './renouvellementmp/renouvellementmp.component';
 import { AvisComponent } from './avis/avis.component';
 import { ListeArticleComponent } from './liste-article/liste-article.component';
+import { DetailArticleComponent } from './detail-article/detail-article.component';
+import { PanierComponent } from './panier/panier.component';
 
 const routes: Routes = [
   { path: 'accueil', component: AccueilComponent },
@@ -31,6 +33,8 @@ const routes: Routes = [
   { path: 'renouvellementmp', component: RenouvellementmpComponent },
   { path: 'avis', component: AvisComponent },
   { path: 'listearticle', component: ListeArticleComponent},
+  { path: 'detailarticle', component: DetailArticleComponent},
+  { path: 'panier', component: PanierComponent}
 
 ];
 

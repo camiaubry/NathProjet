@@ -26,3 +26,44 @@ position: center;
 }
 
 
+.carousel {
+  color: white;
+}
+.carousel .content {
+  display: flex;
+}
+.carousel .content .item {
+  width: 100%;
+  padding: 0.5em;
+  display: block;
+  opacity: 0.5;
+  transition: opacity 0.295s linear 0.2s;
+}
+.carousel .content .item.visible {
+  opacity: 1;
+}
+.carousel .content .item .img {
+  width: 100%;
+  height: 400px;
+  display: block;
+  background-size: cover;
+  background-position: center;
+}
+.carousel .ball {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: black;
+  border: 2px solid;
+  opacity: 0.5;
+}
+.carousel .ball.visible {
+  opacity: 1;
+}
+.carousel .click-area {
+  width: 50px;
+  text-align: center;
+}
+.carousel .click-area i {
+  font-size: 3em;
+}

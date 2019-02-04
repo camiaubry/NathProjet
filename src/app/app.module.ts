@@ -64,6 +64,8 @@ import { AvisComponent } from './avis/avis.component';
 
 import { FormsModule } from '@angular/forms';
 import { ListeArticleComponent } from './liste-article/liste-article.component';
+import { DetailArticleComponent } from './detail-article/detail-article.component';
+import { PanierComponent } from './panier/panier.component';
 // import {LoginService} from "./service/login/login.service";
 
 @NgModule({
@@ -84,6 +86,8 @@ import { ListeArticleComponent } from './liste-article/liste-article.component';
     RenouvellementmpComponent,
     AvisComponent,
     ListeArticleComponent,
+    DetailArticleComponent,
+    PanierComponent,
   ],
   imports: [
     BrowserModule,
