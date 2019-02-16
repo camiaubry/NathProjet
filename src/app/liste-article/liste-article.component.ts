@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material';
+import { DetailArticleDialogueComponent } from '../detail-article-dialogue/detail-article-dialogue.component';
 
 @Component({
   selector: 'app-liste-article',
@@ -7,7 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListeArticleComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialog: MatDialog) {}
+
+  openDialog() {
+    this.dialog.open(DetailArticleDialogueComponent, {
+    });
+  }
 
   ngOnInit() {
   }

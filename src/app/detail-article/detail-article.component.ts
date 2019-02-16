@@ -17,6 +17,7 @@ export class DetailArticleComponent implements OnInit {
   }
 
 
+
   ngOnInit() {
   }
 

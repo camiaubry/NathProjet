@@ -5,6 +5,7 @@ import { LoginComponent } from './login/login.component';
 import { AppRoutingModule } from './app-routing.module';
 import { RouterModule, Routes } from '@angular/router';
 
+
 const routes : Routes = []
 
 import 'hammerjs';
@@ -62,7 +63,7 @@ import { QuisuisjeComponent } from './quisuisje/quisuisje.component';
 import { RenouvellementmpComponent } from './renouvellementmp/renouvellementmp.component';
 import { AvisComponent } from './avis/avis.component';
 
-import { FormsModule } from '@angular/forms';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { ListeArticleComponent } from './liste-article/liste-article.component';
 import { DetailArticleComponent } from './detail-article/detail-article.component';
 import { PanierComponent } from './panier/panier.component';
@@ -98,6 +99,7 @@ import { CommandeComponent } from './commande/commande.component';
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
     FormsModule,
     MatToolbarModule,
     AppRoutingModule,
