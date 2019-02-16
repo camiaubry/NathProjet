@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ArticleService} from "../service/article/article.service";
 
 @Component({
   selector: 'app-admin-add-article',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdminAddArticleComponent implements OnInit {
 
-  constructor() { }
+  constructor(private articleService : ArticleService) { }
 
   ngOnInit() {
+    this.articleService.getAll().subscribe(data =>{
+      console.log(data)
+    })
   }
 
 }
