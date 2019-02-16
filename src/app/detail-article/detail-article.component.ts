@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material';
 import { DetailArticleDialogueComponent } from '../detail-article-dialogue/detail-article-dialogue.component';
+import { GuidetailleDialogueComponent } from '../guidetaille-dialogue/guidetaille-dialogue.component';
 
 @Component({
   selector: 'app-detail-article',
@@ -16,6 +17,10 @@ export class DetailArticleComponent implements OnInit {
     });
   }
 
+  openDialog2() {
+    this.dialog.open(GuidetailleDialogueComponent, {
+    });
+  }
 
 
   ngOnInit() {

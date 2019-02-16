@@ -69,6 +69,7 @@ import { DetailArticleComponent } from './detail-article/detail-article.componen
 import { PanierComponent } from './panier/panier.component';
 import { DetailArticleDialogueComponent } from './detail-article-dialogue/detail-article-dialogue.component';
 import { CommandeComponent } from './commande/commande.component';
+import { GuidetailleDialogueComponent } from './guidetaille-dialogue/guidetaille-dialogue.component';
 // import {LoginService} from "./service/login/login.service";
 
 @NgModule({
@@ -93,6 +94,7 @@ import { CommandeComponent } from './commande/commande.component';
     PanierComponent,
     DetailArticleDialogueComponent,
     CommandeComponent,
+    GuidetailleDialogueComponent,
     
     
 
@@ -146,7 +148,7 @@ import { CommandeComponent } from './commande/commande.component';
     // LoginService
   ],
   bootstrap: [AppComponent],
-  entryComponents: [DetailArticleDialogueComponent]
+  entryComponents: [DetailArticleDialogueComponent,GuidetailleDialogueComponent]
 
 })
 export class AppModule { }
