@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material';
+import { DetailArticleDialogueComponent } from '../detail-article-dialogue/detail-article-dialogue.component';
 
 @Component({
   selector: 'app-avis',
@@ -22,7 +24,7 @@ export class AvisComponent implements OnInit {
     };
   });
 
-  constructor() { }
+  constructor() {}
 
   click(i) {
     alert(`${i}`);

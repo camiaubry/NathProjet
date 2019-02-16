@@ -24,9 +24,10 @@
     "@angular/router": "^6.1.0",
     "@material/button": "^0.42.0",
     "angular4-carousel": "^3.1.8",
-    "bootstrap": "^4.2.1",
+    "bootstrap": "^4.3.1",
     "core-js": "^2.5.4",
     "hammerjs": "^2.0.8",
+    "jquery": "^3.3.1",
     "ngx-hm-carousel": "^1.6.5-bata.1",
     "rxjs": "~6.2.0",
     "zone.js": "~0.8.26"

@@ -34,7 +34,7 @@ const routes: Routes = [
   { path: 'avis', component: AvisComponent },
   { path: 'listearticle', component: ListeArticleComponent},
   { path: 'detailarticle', component: DetailArticleComponent},
-  { path: 'panier', component: PanierComponent}
+  { path: 'panier', component: PanierComponent},
 
 ];
 

@@ -1,10 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { AppRoutingModule } from './app-routing.module';
 import { RouterModule, Routes } from '@angular/router';
+
 const routes : Routes = []
 
 import 'hammerjs';
@@ -66,6 +66,8 @@ import { FormsModule } from '@angular/forms';
 import { ListeArticleComponent } from './liste-article/liste-article.component';
 import { DetailArticleComponent } from './detail-article/detail-article.component';
 import { PanierComponent } from './panier/panier.component';
+import { DetailArticleDialogueComponent } from './detail-article-dialogue/detail-article-dialogue.component';
+import { CommandeComponent } from './commande/commande.component';
 // import {LoginService} from "./service/login/login.service";
 
 @NgModule({
@@ -88,6 +90,11 @@ import { PanierComponent } from './panier/panier.component';
     ListeArticleComponent,
     DetailArticleComponent,
     PanierComponent,
+    DetailArticleDialogueComponent,
+    CommandeComponent,
+    
+    
+
   ],
   imports: [
     BrowserModule,
@@ -136,6 +143,8 @@ import { PanierComponent } from './panier/panier.component';
   providers: [
     // LoginService
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [DetailArticleDialogueComponent]
+
 })
 export class AppModule { }
