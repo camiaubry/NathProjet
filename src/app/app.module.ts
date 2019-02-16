@@ -71,6 +71,7 @@ import { DetailArticleDialogueComponent } from './detail-article-dialogue/detail
 import { CommandeComponent } from './commande/commande.component';
 import { GuidetailleDialogueComponent } from './guidetaille-dialogue/guidetaille-dialogue.component';
 import { SuiviCommandeComponent } from './suivi-commande/suivi-commande.component';
+import { AdminListeDialogueComponent } from './admin-liste-dialogue/admin-liste-dialogue.component';
 // import {LoginService} from "./service/login/login.service";
 
 @NgModule({
@@ -97,6 +98,7 @@ import { SuiviCommandeComponent } from './suivi-commande/suivi-commande.componen
     CommandeComponent,
     GuidetailleDialogueComponent,
     SuiviCommandeComponent,
+    AdminListeDialogueComponent,
     
     
 
@@ -150,7 +152,7 @@ import { SuiviCommandeComponent } from './suivi-commande/suivi-commande.componen
     // LoginService
   ],
   bootstrap: [AppComponent],
-  entryComponents: [DetailArticleDialogueComponent,GuidetailleDialogueComponent]
+  entryComponents: [DetailArticleDialogueComponent,GuidetailleDialogueComponent,AdminListeDialogueComponent]
 
 })
 export class AppModule { }
