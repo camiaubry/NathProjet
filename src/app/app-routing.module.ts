@@ -18,6 +18,7 @@ import { ListeArticleComponent } from './liste-article/liste-article.component';
 import { DetailArticleComponent } from './detail-article/detail-article.component';
 import { PanierComponent } from './panier/panier.component';
 import { CommandeComponent } from './commande/commande.component';
+import { SuiviCommandeComponent } from './suivi-commande/suivi-commande.component';
 
 const routes: Routes = [
   { path: 'accueil', component: AccueilComponent },
@@ -37,6 +38,7 @@ const routes: Routes = [
   { path: 'detailarticle', component: DetailArticleComponent},
   { path: 'panier', component: PanierComponent},
   { path: 'commande', component: CommandeComponent},
+  { path: 'suivi-commande', component: SuiviCommandeComponent},
 
 ];
 

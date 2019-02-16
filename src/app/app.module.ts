@@ -70,6 +70,7 @@ import { PanierComponent } from './panier/panier.component';
 import { DetailArticleDialogueComponent } from './detail-article-dialogue/detail-article-dialogue.component';
 import { CommandeComponent } from './commande/commande.component';
 import { GuidetailleDialogueComponent } from './guidetaille-dialogue/guidetaille-dialogue.component';
+import { SuiviCommandeComponent } from './suivi-commande/suivi-commande.component';
 // import {LoginService} from "./service/login/login.service";
 
 @NgModule({
@@ -95,6 +96,7 @@ import { GuidetailleDialogueComponent } from './guidetaille-dialogue/guidetaille
     DetailArticleDialogueComponent,
     CommandeComponent,
     GuidetailleDialogueComponent,
+    SuiviCommandeComponent,
     
     
 
