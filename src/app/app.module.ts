@@ -72,6 +72,9 @@ import { CommandeComponent } from './commande/commande.component';
 import { GuidetailleDialogueComponent } from './guidetaille-dialogue/guidetaille-dialogue.component';
 import { SuiviCommandeComponent } from './suivi-commande/suivi-commande.component';
 import { AdminListeDialogueComponent } from './admin-liste-dialogue/admin-liste-dialogue.component';
+import { HttpClient } from 'selenium-webdriver/http';
+import { HttpClientModule } from '@angular/common/http';
+import { ArticleService } from './service/article/article.service';
 // import {LoginService} from "./service/login/login.service";
 
 @NgModule({
@@ -105,6 +108,7 @@ import { AdminListeDialogueComponent } from './admin-liste-dialogue/admin-liste-
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     ReactiveFormsModule,
     FormsModule,
     MatToolbarModule,
@@ -149,7 +153,7 @@ import { AdminListeDialogueComponent } from './admin-liste-dialogue/admin-liste-
     RouterModule.forRoot(routes, { useHash: true }),
   ],
   providers: [
-    // LoginService
+    ArticleService
   ],
   bootstrap: [AppComponent],
   entryComponents: [DetailArticleDialogueComponent,GuidetailleDialogueComponent,AdminListeDialogueComponent]
