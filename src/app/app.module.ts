@@ -75,6 +75,8 @@ import { AdminListeDialogueComponent } from './admin-liste-dialogue/admin-liste-
 import { HttpClient } from 'selenium-webdriver/http';
 import { HttpClientModule } from '@angular/common/http';
 import { ArticleService } from './service/article/article.service';
+import { AdminListeArticleComponent } from './admin-liste-article/admin-liste-article.component';
+import { AdminListeArticleDialogueComponent } from './admin-liste-article-dialogue/admin-liste-article-dialogue.component';
 // import {LoginService} from "./service/login/login.service";
 
 @NgModule({
@@ -102,6 +104,8 @@ import { ArticleService } from './service/article/article.service';
     GuidetailleDialogueComponent,
     SuiviCommandeComponent,
     AdminListeDialogueComponent,
+    AdminListeArticleComponent,
+    AdminListeArticleDialogueComponent,
     
     
 
@@ -156,7 +160,7 @@ import { ArticleService } from './service/article/article.service';
     ArticleService
   ],
   bootstrap: [AppComponent],
-  entryComponents: [DetailArticleDialogueComponent,GuidetailleDialogueComponent,AdminListeDialogueComponent]
+  entryComponents: [DetailArticleDialogueComponent,GuidetailleDialogueComponent,AdminListeDialogueComponent, AdminListeArticleDialogueComponent]
 
 })
 export class AppModule { }
