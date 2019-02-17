@@ -19,6 +19,7 @@ import { DetailArticleComponent } from './detail-article/detail-article.componen
 import { PanierComponent } from './panier/panier.component';
 import { CommandeComponent } from './commande/commande.component';
 import { SuiviCommandeComponent } from './suivi-commande/suivi-commande.component';
+import { AdminListeArticleComponent } from './admin-liste-article/admin-liste-article.component';
 
 const routes: Routes = [
   { path: 'accueil', component: AccueilComponent },
@@ -39,7 +40,7 @@ const routes: Routes = [
   { path: 'panier', component: PanierComponent},
   { path: 'commande', component: CommandeComponent},
   { path: 'suivi-commande', component: SuiviCommandeComponent},
-
+  { path: 'admin-liste-article', component: AdminListeArticleComponent},
 ];
 
 @NgModule({

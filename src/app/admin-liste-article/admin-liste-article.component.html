@@ -1,3 +1,61 @@
-<p>
-  admin-liste-article works!
-</p>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<div class="img">
+  <div class="container contact">
+   
+    <div>
+      <button mat-button class=" button login btn btn-default"> <i class="fas fa-file-export"></i>  Exporter</button>
+    </div>
+        <table mat-table [dataSource]="dataSource"  matSort>
+          <!-- Position Column -->
+          <ng-container matColumnDef="position">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Titre </th>
+            <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+          </ng-container>
+
+          <!-- Name Column -->
+          <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Catégories </th>
+            <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+          </ng-container>
+
+          <!-- Weight Column -->
+          <ng-container matColumnDef="weight">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Age </th>
+            <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+          </ng-container>
+
+          <!-- Symbol Column -->
+          <ng-container matColumnDef="symbol">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Marque </th>
+            <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+          </ng-container>
+
+          <!-- Symbol Column -->
+          <ng-container matColumnDef="prout">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Prix</th>
+            <td mat-cell *matCellDef="let element"> {{element.prout}} </td>
+          </ng-container>
+          
+
+          <!-- Symbol Column -->
+          <ng-container matColumnDef="prout2">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Mise à jour</th>
+            <td mat-cell *matCellDef="let element">
+              <a href="#/admin-add-article"><button mat-button><i class="fas fa-pencil-alt"></i></button></a>
+              <button mat-button (click)="openDialog()"><i class="fas fa-trash-alt"></i></button>
+            </td>
+          </ng-container>
+
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+
+        
+
+        <mat-paginator [pageSizeOptions]="[5]" showFirstLastButtons></mat-paginator>
+      </div>
+    </div>
+

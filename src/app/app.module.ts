@@ -77,6 +77,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ArticleService } from './service/article/article.service';
 import { AdminListeArticleComponent } from './admin-liste-article/admin-liste-article.component';
 import { AdminListeArticleDialogueComponent } from './admin-liste-article-dialogue/admin-liste-article-dialogue.component';
+import { AnnulerCommandeDialogueComponent } from './annuler-commande-dialogue/annuler-commande-dialogue.component';
 // import {LoginService} from "./service/login/login.service";
 
 @NgModule({
@@ -106,8 +107,7 @@ import { AdminListeArticleDialogueComponent } from './admin-liste-article-dialog
     AdminListeDialogueComponent,
     AdminListeArticleComponent,
     AdminListeArticleDialogueComponent,
-    
-    
+    AnnulerCommandeDialogueComponent,
 
   ],
   imports: [
@@ -160,7 +160,7 @@ import { AdminListeArticleDialogueComponent } from './admin-liste-article-dialog
     ArticleService
   ],
   bootstrap: [AppComponent],
-  entryComponents: [DetailArticleDialogueComponent,GuidetailleDialogueComponent,AdminListeDialogueComponent, AdminListeArticleDialogueComponent]
+  entryComponents: [DetailArticleDialogueComponent,GuidetailleDialogueComponent,AdminListeDialogueComponent,AdminListeArticleDialogueComponent, AnnulerCommandeDialogueComponent]
 
 })
 export class AppModule { }
