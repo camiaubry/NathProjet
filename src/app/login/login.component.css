@@ -170,12 +170,10 @@
   bottom: 0;
   left: 0;
   right: 0;
-  position: fixed;
   background-position: center center;
   background-repeat:  no-repeat;
   background-attachment: fixed;
   background-size:  cover;
-  background-image: url(src\assets\imgs2\accueil-mixte.png);
 }
 
 

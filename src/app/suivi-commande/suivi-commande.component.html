@@ -2,9 +2,9 @@
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
-<div class="img">
+
   <div class="container contact">
-        <table mat-table [dataSource]="dataSource"  matSort>
+        <table mat-table [dataSource]="dataSource" class="fixed" matSort>
           <!-- Position Column -->
           <ng-container matColumnDef="position">
             <th mat-header-cell *matHeaderCellDef mat-sort-header> N°Commande </th>
@@ -52,7 +52,6 @@
 
         
 
-        <mat-paginator [pageSizeOptions]="[5]" showFirstLastButtons></mat-paginator>
+        <mat-paginator [pageSizeOptions]="[5]" class="fixed2" showFirstLastButtons></mat-paginator>
       </div>
-    </div>
 

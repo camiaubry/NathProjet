@@ -2,13 +2,13 @@
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
-<div class="img">
+
   <div class="container contact">
    
     <div>
       <button mat-button class=" button login btn btn-default"> <i class="fas fa-file-export"></i>  Exporter</button>
     </div>
-        <table mat-table [dataSource]="dataSource"  matSort>
+        <table mat-table class="fixed" [dataSource]="dataSource"  matSort>
           <!-- Position Column -->
           <ng-container matColumnDef="position">
             <th mat-header-cell *matHeaderCellDef mat-sort-header> No Commande </th>
@@ -50,9 +50,10 @@
           <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
         </table>
 
-        
-
-        <mat-paginator [pageSizeOptions]="[5]" showFirstLastButtons></mat-paginator>
+      <div class="">
+          <mat-paginator [pageSizeOptions]="[5]" class="fixed2" showFirstLastButtons></mat-paginator>
       </div>
-    </div>
+      
+      </div>
+
 
