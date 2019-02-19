@@ -6,13 +6,15 @@
     bottom: 0;
     left: 0;
     right: 0;
-    position: fixed;
     background-position: center center;
     background-repeat:  no-repeat;
     background-attachment: fixed;
     background-size:  cover;
-    background-image: url(src\assets\imgs2\accueil-mixte.png);
   }
+
+.container{
+  position:fixed;
+}
 
   body{
     background-color: #25274d;
@@ -20,6 +22,8 @@
 .contact{
     padding: 4%;
     height: 200px;
+    margin-top:3%;
+    margin-left:20%;
 }
 .col-md-3{
     background: LightGray;

@@ -5,30 +5,29 @@
     bottom: 0;
     left: 0;
     right: 0;
-    position: fixed;
     background-position: center center;
     background-repeat:  no-repeat;
     background-attachment: fixed;
     background-size:  cover;
-    background-image: url(src\assets\imgs2\accueil-mixte.png);
 
   }
 
   .container 		{
     font-family:'arial';
-    width:50%;
-    height: 45%;
-    margin:80px auto 0;
-    margin-left:18%;
+    width:40%;
+    height: 76%;
+    margin-bottom:20%;
+    margin-left:28%;
     padding:10px 50px 10px;
     background-color:white;
     opacity: 0.9;
     border-radius: 20px;  
+    position: fixed;
   }
 
 
-.matStepperPrevious {
-    
+.section3 {
+    margin-top:8%;
 }
 
 

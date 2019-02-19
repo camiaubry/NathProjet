@@ -11,17 +11,28 @@
   background-repeat:  no-repeat;
   background-attachment: fixed;
   background-size:  cover;
-  background-image: url(src\assets\imgs2\accueil-mixte.png);
 }
 
 body{
   background-color: #25274d;
 }
+.fixed{
+  margin-top:8%;
+  width:60%;
+  margin-left:0%;
+  position:fixed;
+}
+
+.fixed2{
+  position:fixed;
+  width:60%;
+  margin-top:27%;
+}
 .contact{
   padding: 4%;
   height: 400px;
-}
 
+}
 .contact-info{
   margin-top:10%;
 }
