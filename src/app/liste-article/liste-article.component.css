@@ -11,9 +11,9 @@
 z-index: 1;
 position: fixed;
 background-color:white;
-margin-top:3.5%;
+margin-top:7%;
 margin-right: 15%;
-height: 74%;
+height: 67%;
 overflow-y: scroll;
 }
 
@@ -78,7 +78,7 @@ overflow-y: scroll;
 .wrapper{
   z-index: 4;
   position: fixed;
-  margin-top:0,2%;
+  margin-top:3%;
   margin-right:90%;
   float:left;
   width:100%;
