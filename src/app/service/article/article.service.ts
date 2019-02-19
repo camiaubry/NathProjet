@@ -1,14 +1,21 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
+import {Article} from "../../model/article";
 
 @Injectable()
 export class ArticleService {
 
+  url = "//localhost:8080/api/article";
+
   constructor(private http: HttpClient) { }
 
   getAll(): Observable<any> {
-    console.log("PROUTTTTTTTTTTTTTTTTTTTT")
-    return this.http.get('//localhost:8080/api/article');
+    return this.http.get(this.url) as Observable<any>;
   }
+
+  create(article : Article):Observable<any>{
+    return this.http.post(this.url,article) as Observable<any>;
+  }
+
 }

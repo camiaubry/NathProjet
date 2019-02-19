@@ -78,7 +78,7 @@ import { ArticleService } from './service/article/article.service';
 import { AdminListeArticleComponent } from './admin-liste-article/admin-liste-article.component';
 import { AdminListeArticleDialogueComponent } from './admin-liste-article-dialogue/admin-liste-article-dialogue.component';
 import { AnnulerCommandeDialogueComponent } from './annuler-commande-dialogue/annuler-commande-dialogue.component';
-// import {LoginService} from "./service/login/login.service";
+import {HttpModule} from "@angular/http";
 
 @NgModule({
   declarations: [
@@ -112,6 +112,7 @@ import { AnnulerCommandeDialogueComponent } from './annuler-commande-dialogue/an
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     HttpClientModule,
     ReactiveFormsModule,
     FormsModule,
