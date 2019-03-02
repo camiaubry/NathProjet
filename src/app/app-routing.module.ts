@@ -41,6 +41,7 @@ const routes: Routes = [
   { path: 'commande', component: CommandeComponent},
   { path: 'suivi-commande', component: SuiviCommandeComponent},
   { path: 'admin-liste-article', component: AdminListeArticleComponent},
+  { path: '', component: AccueilComponent},
 ];
 
 @NgModule({
