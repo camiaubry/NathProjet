@@ -1,98 +1,82 @@
-.quantity {
-    float: left;
-    margin-right: 15px;
-    background-color: #eee;
-    position: relative;
-    width: 80px;
-    overflow: hidden
+.materialContainer {
+  left: 50%;
+  width: 900px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 3.5%;
 }
 
-.quantity input {
-    margin: 0;
-    text-align: center;
-    width: 15px;
-    height: 15px;
-    padding: 0;
-    float: right;
-    color: #000;
-    font-size: 20px;
-    border: 0;
-    outline: 0;
-    background-color: #F6F6F6
+.article{
+  height: 181%;
+  width: 68%;
+  overflow-y: scroll;
+  position: fixed;
+  margin-top: -13%;
 }
 
-.quantity input.qty {
-    position: relative;
-    border: 0;
-    width: 100%;
-    height: 40px;
-    padding: 10px 25px 10px 10px;
-    text-align: center;
-    font-weight: 400;
-    font-size: 15px;
-    border-radius: 0;
-    background-clip: padding-box
+.paiement{
+  height: 100%;
 }
 
-.quantity .minus, .quantity .plus {
-    line-height: 0;
-    background-clip: padding-box;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    border-radius: 0;
-    -webkit-background-size: 6px 30px;
-    -moz-background-size: 6px 30px;
-    color: #bbb;
-    font-size: 20px;
-    position: absolute;
-    height: 50%;
-    border: 0;
-    right: 0;
-    padding: 0;
-    width: 25px;
-    z-index: 3
+.prix{
+  margin-left:80%
 }
 
-.quantity .minus:hover, .quantity .plus:hover {
-    background-color: #dad8da
+.nom-article{
+  color: goldenrod;
+  margin-left: 8%;
 }
 
-.quantity .minus {
-    bottom: 0
-}
-.shopping-cart {
-    margin-top: 20px;
+.description{
+  margin-left: 14%;
 }
 
-.container 		{
-    font-family:'arial';
-    margin:80px auto 0;
-    margin-left:10%;
-    margin-top:8%;
-    padding:10px 50px 10px;
-    opacity: 0.9;
-    border-radius: 20px;  
-    position:fixed;
-  }
-
-  .product-name {
-      color: goldenrod;;
-  }
-
-  .col-2 {
-      margin-top:3%
-  }
-
-  .btn-primary {
-      background-color:darkturquoise;
-      border-color:darkturquoise;
-      
-  }
-  .btn-success button.active:hover {
-    border: 3px solid rgba(0, 0, 0, 0)
+.content{
+  margin-left: 5%;
 }
 
-.img-responsive{
-    height: 70%;
-    width: 30%;
+.supprimer{
+  margin-left:120%
+}
+
+.prix-article{
+  margin-left: 135%
+}
+
+.row{
+  margin-top : 2%;
+}
+
+.border-article{
+  border-bottom: 1px solid goldenrod;
+  width: 95%;
+  margin-top:2%;
+}
+
+.valider{
+  background-color: goldenrod;
+  margin-left: 20%;
+  width: 200%;
+  border-radius: 50px;
+
+}
+
+.total{
+  font-size: 16px;
+}
+
+.total-cde{
+  margin-top: 4%;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.content-total{
+  margin-top: 10%;
+}
+
+.trait{
+  margin-top: 18%;
+  border-bottom: 1px solid goldenrod;
 }

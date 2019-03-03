@@ -1,95 +1,132 @@
 <div class="img">
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    <!------ Include the above in your HEAD tag ---------->
+  <div class="materialContainer">
+    <div class="row">
+      <div class="col-md-8">
+        <mat-card class="article">
+          <mat-card-header>
+            <mat-card-title>
+              <div class="title">Votre panier</div>
+            </mat-card-title>
+          </mat-card-header>
+          <mat-card-content class="content">
+            <div class="prix">Prix à payer</div>
 
-    <script src="https://use.fontawesome.com/c560c025cf.js"></script>
-    <div class="container">
-        <div class="card shopping-cart">
-            <div class="card-header bg-dark text-light">
-                <i class="fas fa-shopping-bag" aria-hidden="true"></i>
-                Panier
-                <div class="clearfix"></div>
-            </div>
-            <div class="card-body">
-                <!-- PRODUCT -->
+
+            // TODO faire un ngFor
+            <div class="row">
+              <div class="col-md-2">
+                <img class="img-responsive" src="https://i.etsystatic.com/7469826/r/il/e08f4c/1464410287/il_570xN.1464410287_fa3s.jpg" alt="prewiew"
+                     width="90" height="110">
+              </div>
+              <div class="col-md-6">
                 <div class="row">
-                    <div class="col-12 col-sm-12 col-md-2 text-center">
-                        <img class="img-responsive" src="https://i.etsystatic.com/7469826/r/il/e08f4c/1464410287/il_570xN.1464410287_fa3s.jpg" alt="prewiew"
-                            width="120" height="80">
+                  <div class="nom-article">
+                    <strong>BODY GARCON STAR WARS</strong>
+                  </div>
+                  <div class="prix-article">
+                    6€
+                  </div>
+                  <div class="description">
+                    <div>
+                      Taille : 6 mois
                     </div>
-                    <div class="col-12 text-sm-center col-sm-12 text-md-left col-md-6">
-                        <h4 class="product-name">
-                            <strong>BODY GARCON STAR WARS</strong>
-                        </h4>
-                        <h4>
-                            <small>Taille : 6 mois Marque : IKKS Etat du produit : Excellent</small>
-                        </h4>
+                    <div>
+                      Marque : IKKS
                     </div>
-                    <div class="col-12 col-sm-12 text-sm-center col-md-4 text-md-right row">
-                        <div class="col-4 col-sm-4 col-md-9 text-md-right" style="padding-top: 5px">
-                            <h6>
-                                <strong>5,00 €
-                                    <span class="text-muted"></span>
-                                </strong>
-                            </h6>
-                        </div>
-
-                        <div class="col-2 col-sm-2 col-md-2 text-right">
-                            <button type="button" class="btn btn-outline-danger btn-xs">
-                                <i class="fa fa-trash" aria-hidden="true"></i>
-                            </button>
-                        </div>
+                    <div>
+                      Etat du produit : Excellent
                     </div>
+                  </div>
                 </div>
-                <hr>
-                <!-- END PRODUCT -->
-                <!-- PRODUCT -->
+                <div class="supprimer">
+                  <button mat-button><i class="fa fa-trash"></i> Supprimer</button>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="border-article"></div>
+
+            <div class="row">
+              <div class="col-md-2">
+                <img class="img-responsive" src="https://i.etsystatic.com/7469826/r/il/e08f4c/1464410287/il_570xN.1464410287_fa3s.jpg" alt="prewiew"
+                     width="90" height="110">
+              </div>
+              <div class="col-md-6">
                 <div class="row">
-                    <div class="col-12 col-sm-12 col-md-2 text-center">
-                        <img class="img-responsive" src="https://i.etsystatic.com/7469826/r/il/e08f4c/1464410287/il_570xN.1464410287_fa3s.jpg" alt="prewiew"
-                            width="120" height="80">
+                  <div class="nom-article">
+                    <strong>BODY GARCON STAR WARS</strong>
+                  </div>
+                  <div class="prix-article">
+                    6€
+                  </div>
+                  <div class="description">
+                    <div>
+                      Taille : 6 mois
                     </div>
-                    <div class="col-12 text-sm-center col-sm-12 text-md-left col-md-6">
-                        <h4 class="product-name">
-                            <strong>BODY GARCON STAR WARS</strong>
-                        </h4>
-                        <h4>
-                            <small>Taille : 6 mois Marque : IKKS Etat du produit : Excellent</small>
-                        </h4>
+                    <div>
+                      Marque : IKKS
                     </div>
-                    <div class="col-12 col-sm-12 text-sm-center col-md-4 text-md-right row">
-                        <div class="col-4 col-sm-4 col-md-9 text-md-right" style="padding-top: 5px">
-                            <h6>
-                                <strong>5,00 €
-                                    <span class="text-muted"></span>
-                                </strong>
-                            </h6>
-                        </div>
+                    <div>
+                      Etat du produit : Excellent
+                    </div>
+                  </div>
+                </div>
+                <div class="supprimer">
+                  <button mat-button><i class="fa fa-trash"></i> Supprimer</button>
+                </div>
 
-                        <div class="col-2 col-sm-2 col-md-2 text-right">
-                            <button type="button" class="btn btn-outline-danger btn-xs">
-                                <i class="fa fa-trash" aria-hidden="true"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <hr>
-                <!-- END PRODUCT -->
-                <div class="pull-right">
-                    Frais de port : 7,50 €
-                </div>
+              </div>
             </div>
-            <div class="card-footer">
-                <div class="pull-right" style="margin: 10px">
-                    <a href="#/commande" class="btn btn-primary pull-right">Terminer ma commande</a>
-                    <div class="pull-right" style="margin: 5px">
-                        Total :
-                        <b>17,50€</b>
-                    </div>
-                </div>
+
+            <div class="border-article"></div>
+
+          </mat-card-content>
+        </mat-card>
+      </div>
+
+      <div class="col-md-4">
+        <mat-card class="paiement">
+          <mat-card-header>
+            <mat-card-title>
+                <button mat-button class="valider">Paiement</button>
+            </mat-card-title>
+          </mat-card-header>
+          <mat-card-content class="content-total">
+            <div class="row">
+              <div class="col-md-8 total">
+                Achat
+              </div>
+              <div class="col-md-4">
+                12€
+              </div>
             </div>
-        </div>
+
+            <div class="row">
+              <div class="col-md-8 total">
+                Frais de port
+              </div>
+              <div class="col-md-4">
+                4€
+              </div>
+            </div>
+
+            <div class="trait"></div>
+
+            <div class="row total-cde">
+              <div class="col-md-8">
+                Total
+              </div>
+              <div class="col-md-4">
+                16€
+              </div>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </div>
+
+
     </div>
+
+  </div>
 </div>

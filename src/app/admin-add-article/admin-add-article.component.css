@@ -63,12 +63,12 @@
   font-weight: 300;
 }
 
-.button.login {
+.button.save {
   left: 20%;
   width: 60%;
 }
 
-.button.login button, .button button {
+.button.save button, .button button {
   background-color: #25274d;
   border-radius: 50px;
   box-shadow: 2px 5px 2px rgba(0, 0, 0, 0.15);
@@ -80,7 +80,7 @@
   border: 0px solid #fff;
 }
 
-.button.login {
+.button.save {
   margin-top: 30px;
 }
 
