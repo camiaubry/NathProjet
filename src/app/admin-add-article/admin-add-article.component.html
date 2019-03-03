@@ -1,117 +1,86 @@
 <div class="img">
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    <!------ Include the above in your HEAD tag ---------->
+  <div class="materialContainer">
 
-    <div class="materialContainer">
-        <div class="panel panel-primary">
-            <div id="collapseOne" class="panel-collapse collapse in">
-                <div class="panel-body">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Titre" required [(ngModel)]="titre" />
-                            </div>
-                            <div class="form-group">
-                                <textarea class="form-control" placeholder="Description" rows="5" required [(ngModel)]="description"></textarea>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="category">
-                                    Catégorie</label>
-                                <select class="form-control" id="category" [(ngModel)]="categorie">
-                                    <option>Haut</option>
-                                    <option>Bas</option>
-                                    <option>Accessoires</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                    Référence
-                                <input type="text" class="form-control" id="reference" placeholder="Référence" [(ngModel)]="reference"/>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="age">
-                                    Age</label>
-                                <select class="form-control" id="age" [(ngModel)]="age">
-                                    <option>Grand prématuré</option>
-                                    <option>Prématuré</option>
-                                    <option>Naissance</option>
-                                    <option>1 mois</option>
-                                    <option>3 mois</option>
-                                    <option>6 mois</option>
-                                    <option>9 mois</option>
-                                    <option>12 mois</option>
-                                    <option>18 mois</option>
-                                    <option>24 mois</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                Prix
-                                <input type="text" class="form-control" id="prix" placeholder="Prix" [(ngModel)]="prix"/>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="marque">
-                                    Marque</label>
-                                <select class="form-control" id="marque">
-                                    <option>IKKS</option>
-                                    <option>ZARA</option>
-                                    <option>Baby GAP</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="qualite">
-                                    Qualité</label>
-                                <select class="form-control" id="qualite" [(ngModel)]="qualite">
-                                    <option>Comme neuf</option>
-                                    <option>Très Bon état</option>
-                                    <option>Bon état</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="well well-sm well-primary">
-                            <div class="input-group image-preview">
-                                <input type="text" class="form-control image-preview-filename" disabled="disabled" [(ngModel)]="photo">
-                                <!-- don't give a name === doesn't send on POST/GET -->
-                                <span class="input-group-btn">
-                                    <!-- image-preview-clear button -->
-                                    <button type="button" class="btn btn-default image-preview-clear" style="display:none;">
-                                        <span class="glyphicon glyphicon-remove"></span> Clear
-                                    </button>
-                                    <!-- image-preview-input -->
-                                    <div class="btn btn-default image-preview-input">
-                                        <span class="glyphicon glyphicon-folder-open"></span>
-                                        <span class="image-preview-input-title">Browse</span>
-                                        <input type="file" accept="image/png, image/jpeg, image/gif" name="input-file-preview" />
-                                        <!-- rename it -->
-                                    </div>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="button login form-group">
-                            <button type="submit" class="btn btn-default" (click)="valider()">Valider</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <form class="form">
+      <mat-form-field class="input-mat">
+        <input matInput placeholder="Titre">
+      </mat-form-field>
+    </form>
+    <form class="form">
+      <mat-form-field class="input-mat">
+        <input matInput placeholder="Description">
+      </mat-form-field>
+    </form>
+
+
+    <div class="row">
+      <form class="form">
+        <mat-form-field>
+          <mat-select placeholder="Catégorie">
+            <mat-option></mat-option>
+            <mat-option value="haut">Haut</mat-option>
+            <mat-option value="bas">Bas</mat-option>
+            <mat-option value="accessoire">Accessoires</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </form>
+      <form class="form">
+        <mat-form-field class="input-mat">
+          <input matInput placeholder="Référence">
+        </mat-form-field>
+      </form>
+      <form class="form">
+        <mat-form-field>
+          <mat-select placeholder="Age">
+            <mat-option></mat-option>
+            <mat-option>0 mois</mat-option>
+            <mat-option>1 mois</mat-option>
+            <mat-option>3 mois</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </form>
+
     </div>
+
+    <div class="row">
+      <form class="form">
+        <mat-form-field class="input-mat">
+          <input type="number" matInput placeholder="Prix">
+        </mat-form-field>
+      </form>
+
+      <form class="form">
+        <mat-form-field>
+          <mat-select placeholder="Marque">
+            <mat-option></mat-option>
+            <mat-option>IKKS</mat-option>
+            <mat-option>Orchestra</mat-option>
+            <mat-option>Levis</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </form>
+      <form class="form">
+        <mat-form-field>
+          <mat-select placeholder="Qualité">
+            <mat-option></mat-option>
+            <mat-option>Neuf</mat-option>
+            <mat-option>Bon état</mat-option>
+            <mat-option>Etat moyen</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </form>
+    </div>
+
+    <div class="form">     
+      <input type="file" #fileImportInput name="File Upload" id="txtFileUpload"/>
+      {{fileName}}
+    </div>
+
+    <div class="button save">
+      <button>Sauvegarder</button>
+    </div>
+
+
+  </div>
 
 </div>

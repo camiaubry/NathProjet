@@ -18,6 +18,8 @@ export class AdminAddArticleComponent implements OnInit {
   photo?: Blob;
   marque?: string;
   qualite?: string;
+  fileName : string;
+
 
   constructor(private articleService : ArticleService) { }
 

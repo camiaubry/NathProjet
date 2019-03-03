@@ -1,27 +1,32 @@
-<div >
+<div>
   <div class="img">
 
-      <div class="materialContainer" >
-        <div class="box">
+    <div class="materialContainer">
+      <div class="box">
 
-          <div class="title">Bienvenue !</div>
+        <div class="title">Bienvenue !</div>
 
-          <div class="input">
-            <input type="text" style="background-color:white" name="name" id="name" placeholder="   Identifiant" [(ngModel)]="name">
-            <span class="spin"></span>
-          </div>
+        <form class="form">
+          <i class="fas fa-user"></i>
+          <mat-form-field class="input-mat">
+            <input matInput placeholder="Identifiant">
+          </mat-form-field>
+        </form>
 
-          <div class="input">
-            <input type="password" style="background-color:white"name="pass" id="pass"placeholder="    Mot de passe" [(ngModel)]="pass">
-            <span class="spin"></span>
-          </div>
+        <form class="form">
+          <i class="fas fa-unlock"></i>
+          <mat-form-field class="input-mat">
+            <input type="password" matInput placeholder="Mot de passe">
+          </mat-form-field>
+        </form>
 
-          <div class="button login">
-            <button (click)="connexion()"><span>Connexion</span> <i class="fa fa-check"></i></button>
-          </div>
-          <a href="#/motdepasseoublier" class="pass-forgot">Mot de passe perdu ?</a>
-          <a href="#/inscription" class="inscription">Inscription</a>
+
+        <div class="button login">
+          <button><span>Connexion</span> <i class="fa fa-check"></i></button>
         </div>
+        <a href="#/motdepasseoublier" class="pass-forgot">Mot de passe perdu ?</a>
+        <a href="#/inscription" class="inscription">Inscription</a>
       </div>
     </div>
+  </div>
 </div>
