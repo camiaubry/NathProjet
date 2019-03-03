@@ -7,12 +7,17 @@
 }
 
 .param{
-    margin-left:30%;
+    margin-left:25%;
 }
 
 .param2{
+    margin-left:0,5%;
+}
+
+.param3{
     margin-left:1%;
 }
+
 .size{
     font-size: 14px;
 }

@@ -2,7 +2,6 @@
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
-<div class="img">
   <div class="container contact">
     <div class="row">
       <div class="col-md-3">
@@ -14,27 +13,28 @@
       </div>
       <div class="col-md-6">
         <div class="input">
-          <input type="text" style="background-color:white" name="name" id="name" placeholder="   Nom">
-          <span class="spin"></span>
+          <mat-form-field>
+          <input matInput type="text"placeholder="Nom">
+          </mat-form-field>
+          <mat-form-field class="margin"> 
+              <input matInput type="text" placeholder="Prénom">
+            </mat-form-field>
         </div>
 
         <div class="input">
-          <input type="text" style="background-color:white" name="prenom" id="prenom" placeholder="   Prénom">
-          <span class="spin"></span>
+            <mat-form-field class="example-full-width">
+          <input matInput type="text" placeholder="Email">
+        </mat-form-field>
         </div>
 
         <div class="input">
-          <input type="text" style="background-color:white" name="email" id="email" placeholder="   Email">
-          <span class="spin"></span>
-        </div>
-        
-          <textarea class="input area"style="background-color:white" name="commentaire" id="commentaire" placeholder="   Commentaire"></textarea>
-          <span class="spin"></span>
-
+        <mat-form-field class="example-full-width2">
+          <textarea matInput placeholder="Message"></textarea>
+          </mat-form-field>
+          </div>
         <div class="button login">
           <button type="submit" class="btn btn-default">Valider</button>
         </div>
       </div>
     </div>
   </div>
-</div>
