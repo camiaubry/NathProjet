@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./renouvellementmp.component.css']
 })
 export class RenouvellementmpComponent implements OnInit {
-
+  hide = true;
   constructor() { }
 
   ngOnInit() {

@@ -16,8 +16,9 @@
         <form class="form">
           <i class="fas fa-unlock"></i>
           <mat-form-field class="input-mat">
-            <input type="password" matInput placeholder="Mot de passe">
-          </mat-form-field>
+            <input type="password" matInput placeholder="Mot de passe"  [type]="hide ? 'password' : 'text'">
+          <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </mat-form-field>
         </form>
 
 

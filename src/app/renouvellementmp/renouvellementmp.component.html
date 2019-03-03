@@ -6,12 +6,14 @@
       <p> Veuillez entrer votre nouveau mot de passe</p>
       <div class="input">
           <mat-form-field class="margin"> 
-        <input matInput placeholder="Mot de passe*">
+        <input matInput placeholder="Mot de passe*" [type]="hide ? 'password' : 'text'">
+        <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
       </mat-form-field>
       </div>
       <div class="input">
           <mat-form-field class="margin"> 
-        <input matInput placeholder="Confirmation du mot de passe*">
+        <input matInput placeholder="Confirmation du mot de passe*" [type]="hide ? 'password' : 'text'">
+        <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
       </mat-form-field>
       </div>
       <div class="group">      

@@ -24,18 +24,18 @@
                 </button>
                 <mat-menu #menu="matMenu">
                     <button mat-menu-item>Mon profil</button>
-                    <button mat-menu-item>Mes commandes</button>
+
+                    <a href="/#/commande">
+                        <button mat-menu-item>Mes commandes</button>
+                    </a>
                 </mat-menu>
             </div>
             <div class="param2">
-                <button mat-button matBadge="8" matBadgeSize="medium" matBadgePosition="after" matBadgeColor="primary">
+                <button mat-button matBadge="8" matBadgeSize="medium" matBadgePosition="after" matBadgeColor="primary" (click)="redirectPanier()">
                     <div>
                         <i class="fas fa-shopping-bag"></i> Mon panier
                     </div>
                 </button>
-
-
-
             </div>
             <div class="param3">
                 <button mat-button class="navbar-brand size" href="#">
@@ -55,16 +55,16 @@
             <nav class="navigation">
                 <ul>
                     <li class="active">
-                        <a>NOUVEAUTE</a>
+                        <a href="/#/listearticle/">NOUVEAUTE</a>
                     </li>
                     <li>
-                        <a>ARMOIRE DE CAMILLE</a>
+                        <a href="/#/accueilcamille/">ARMOIRE DE CAMILLE</a>
                     </li>
                     <li>
-                        <a>ARMOIRE DE CLEMENT</a>
+                        <a href="/#/accueilclement/">ARMOIRE DE CLEMENT</a>
                     </li>
                     <li>
-                        <a>ACCESSOIRES</a>
+                        <a href="/#/listearticle/">ACCESSOIRES</a>
 
                     </li>
                     <li>
