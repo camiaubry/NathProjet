@@ -15,25 +15,34 @@
       <div class="col-md-6">
         <div class="contact-form">
           <div class="input">
-            <input type="text" style="background-color:white" name="name" id="name" placeholder="   Nom">
+            <mat-form-field>
+            <input matInput type="text" name="name" id="name" placeholder="   Nom*">
             <span class="spin"></span>
+          </mat-form-field>
+
+          <mat-form-field class="margin">
+              <input matInput type="text" name="name" id="name" placeholder="   Prenom*">
+              <span class="spin"></span>
+            </mat-form-field>
+          </div>
+       
+          <div class="input">
+              <mat-form-field class="example-full-width">
+            <input matInput type="text" name="name" id="email" placeholder="   E-mail*">
+    
+          </mat-form-field>
           </div>
           <div class="input">
-            <input type="text" style="background-color:white" name="name" id="prenom" placeholder="   Prénom">
+              <mat-form-field>
+            <input matInput type="text" name="name" id="mdp" placeholder="   Mot de passe*">
             <span class="spin"></span>
-          </div>
-          <div class="input">
-            <input type="text" style="background-color:white" name="name" id="email" placeholder="   E-mail">
-            <span class="spin"></span>
-          </div>
-          <div class="input">
-            <input type="text" style="background-color:white" name="name" id="mdp" placeholder="   Mot de passe">
-            <span class="spin"></span>
-          </div>
-          <div class="input">
-            <input type="text" style="background-color:white" name="name" id="confirmationMDP"
-                   placeholder="   Confirmation du mot de passe">
-            <span class="spin"></span>
+          </mat-form-field>
+          <mat-form-field class="margin"> 
+              <input matInput type="text" name="name" id="confirmationMDP"
+                     placeholder="Confirmation*">
+              <span class="spin"></span>
+            </mat-form-field>
+
           </div>
 
           <div class="button login">

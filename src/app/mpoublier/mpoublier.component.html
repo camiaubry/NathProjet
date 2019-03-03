@@ -1,11 +1,14 @@
 <div class="img">
     <div class="container">
            <div class="box">
-        <h1>Mot de passe oublié ?</h1>
-        <h2> Veuillez entrer votre adresse e-mail pour éditer un nouveau mot de passe.</h2>
+        <h2>Mot de passe oublié ?</h2>
+        <br>
+        <p> Veuillez entrer votre adresse e-mail pour éditer un nouveau mot de passe.</p>
         <form>
-            <div class="input">    
-                <input type="text" style="background-color:white" name="name" id="name" placeholder="  E-mail">
+            <div class="input">  
+                <mat-form-field class="example-full-width">  
+                <input matInput type="text" name="name" id="name" placeholder="  E-mail">
+                </mat-form-field>
                 <mat-hint *ngIf="emailError" class="emailError" align="start" >L'e-mail indiqué n'est pas reconnu par nos services</mat-hint>
                 <mat-hint *ngIf="emailConfirm" [ngStyle]="{'color': 'green'}" align="start" >E-mail envoyé</mat-hint>
                 <span class="spin"></span>

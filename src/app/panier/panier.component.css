@@ -1,18 +1,3 @@
-.img {
-    width: 110%;
-    height:100%;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-position: center center;
-    background-repeat:  no-repeat;
-    background-attachment: fixed;
-    background-size:  cover;
-  }
-
-
-
 .quantity {
     float: left;
     margin-right: 15px;
@@ -83,6 +68,7 @@
     font-family:'arial';
     margin:80px auto 0;
     margin-left:10%;
+    margin-top:8%;
     padding:10px 50px 10px;
     opacity: 0.9;
     border-radius: 20px;  
@@ -106,3 +92,7 @@
     border: 3px solid rgba(0, 0, 0, 0)
 }
 
+.img-responsive{
+    height: 70%;
+    width: 30%;
+}
