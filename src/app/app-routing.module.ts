@@ -22,6 +22,8 @@ import { SuiviCommandeComponent } from './suivi-commande/suivi-commande.componen
 import { AdminListeArticleComponent } from './admin-liste-article/admin-liste-article.component';
 import { AccueilCamilleComponent } from './accueil-camille/accueil-camille.component';
 import { AccueilClementComponent } from './accueil-clement/accueil-clement.component';
+import { ProfileComponent } from './profile/profile.component';
+import { MescommandesComponent } from './mescommandes/mescommandes.component';
 
 const routes: Routes = [
   { path: 'accueil', component: AccueilComponent },
@@ -46,6 +48,8 @@ const routes: Routes = [
   { path: '', component: AccueilComponent},
   { path: 'accueilcamille', component: AccueilCamilleComponent},
   { path: 'accueilclement', component: AccueilClementComponent},
+  { path: 'profile', component: ProfileComponent},
+  { path: 'mescommandes', component: MescommandesComponent},
 ];
 
 @NgModule({

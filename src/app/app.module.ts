@@ -81,6 +81,9 @@ import { AnnulerCommandeDialogueComponent } from './annuler-commande-dialogue/an
 import {HttpModule} from "@angular/http";
 import { AccueilCamilleComponent } from './accueil-camille/accueil-camille.component';
 import { AccueilClementComponent } from './accueil-clement/accueil-clement.component';
+import { ProfileComponent } from './profile/profile.component';
+import { MescommandesComponent } from './mescommandes/mescommandes.component';
+
 
 @NgModule({
   declarations: [
@@ -112,6 +115,8 @@ import { AccueilClementComponent } from './accueil-clement/accueil-clement.compo
     AnnulerCommandeDialogueComponent,
     AccueilCamilleComponent,
     AccueilClementComponent,
+    ProfileComponent,
+    MescommandesComponent,
 
   ],
   imports: [

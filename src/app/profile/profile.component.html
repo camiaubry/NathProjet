@@ -1,0 +1,59 @@
+<div class="section3">
+  <div class="container">
+    <div class="row">
+      <mat-tab-group>
+        <mat-tab label="Vos données personnelles">
+          <form class="example-form">
+
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Nom :" value="Dupont" />
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Prénom :" value="Martine" />
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width">
+            <input matInput placeholder="Adresse :" value="2 rue des petits prouts">
+            </mat-form-field>
+
+           <mat-form-field class="example-full-width">
+              <input matInput placeholder="Code Postal :" value="63000" />
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Ville :" value="Clermont-Ferrand" />
+            </mat-form-field>
+
+           <mat-form-field class="example-full-width">
+              <input matInput placeholder="E-mail :" value="dupont.martine@mail.com"/>
+            </mat-form-field>
+          </form>
+
+          <button mat-button class="button"> Modifier vos informations personnelles</button>
+        </mat-tab>
+
+        <mat-tab label="Modifier votre mot de passe">
+          <form class="example-form">
+            <mat-form-field class="example-full-width">
+              <input type="password" matInput placeholder="Saissisez votre mot de passe actuel" [type]="hide ? 'password' : 'text'"/>
+              <mat-icon matSuffix (click)="hide = !hide">{{hide ? "visibility_off" : "visibility"}}</mat-icon>
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width">
+              <input type="password" matInput placeholder="Saissisez votre nouveau mot de passe" [type]="hide ? 'password' : 'text'"/>
+              <mat-icon matSuffix (click)="hide = !hide">{{hide ? "visibility_off" : "visibility"}}</mat-icon></mat-form-field>
+
+            <mat-form-field class="example-full-width">
+              <input type="password" matInput placeholder="Confirmez votre nouveau mot de passe" [type]="hide ? 'password' : 'text'"/>
+              <mat-icon matSuffix (click)="hide = !hide">{{hide ? "visibility_off" : "visibility"}}</mat-icon>
+
+            </mat-form-field>
+          </form>
+
+          <button mat-button class="buttonMp">Modifier votre mot de passe</button>
+        </mat-tab>
+      </mat-tab-group>
+    </div>
+  </div>
+</div>
