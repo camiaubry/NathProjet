@@ -22,4 +22,8 @@ export class MenuComponent implements OnInit {
     this.isCollapsed = !this.isCollapsed;
   }
 
+  redirectPanier(){
+    window.location.href='/#/panier'
+  }
+
 }

@@ -79,6 +79,8 @@ import { AdminListeArticleComponent } from './admin-liste-article/admin-liste-ar
 import { AdminListeArticleDialogueComponent } from './admin-liste-article-dialogue/admin-liste-article-dialogue.component';
 import { AnnulerCommandeDialogueComponent } from './annuler-commande-dialogue/annuler-commande-dialogue.component';
 import {HttpModule} from "@angular/http";
+import { AccueilCamilleComponent } from './accueil-camille/accueil-camille.component';
+import { AccueilClementComponent } from './accueil-clement/accueil-clement.component';
 
 @NgModule({
   declarations: [
@@ -108,6 +110,8 @@ import {HttpModule} from "@angular/http";
     AdminListeArticleComponent,
     AdminListeArticleDialogueComponent,
     AnnulerCommandeDialogueComponent,
+    AccueilCamilleComponent,
+    AccueilClementComponent,
 
   ],
   imports: [
