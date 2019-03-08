@@ -70,7 +70,6 @@ import { PanierComponent } from './panier/panier.component';
 import { DetailArticleDialogueComponent } from './detail-article-dialogue/detail-article-dialogue.component';
 import { CommandeComponent } from './commande/commande.component';
 import { GuidetailleDialogueComponent } from './guidetaille-dialogue/guidetaille-dialogue.component';
-import { SuiviCommandeComponent } from './suivi-commande/suivi-commande.component';
 import { AdminListeDialogueComponent } from './admin-liste-dialogue/admin-liste-dialogue.component';
 import { HttpClient } from 'selenium-webdriver/http';
 import { HttpClientModule } from '@angular/common/http';
@@ -108,7 +107,6 @@ import { MescommandesComponent } from './mescommandes/mescommandes.component';
     DetailArticleDialogueComponent,
     CommandeComponent,
     GuidetailleDialogueComponent,
-    SuiviCommandeComponent,
     AdminListeDialogueComponent,
     AdminListeArticleComponent,
     AdminListeArticleDialogueComponent,

@@ -1,25 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {NestedTreeControl} from '@angular/cdk/tree';
-import {MatTreeNestedDataSource} from '@angular/material/tree';
-
-interface FoodNode {
-  name: string;
-  children?: FoodNode[];
-}
-
-const TREE_DATA: FoodNode[] = [
-  {
-    name: 'Référence de commande - 001 / 02-02-2019',
-    children: [
-      {name: 'Date de la commande : 02-02-2019'},
-      {name: 'Produit : Body - stars wars'},
-      {name: 'Status : en cours de livraison'},
-      {name: 'Numéro de suivi : 12345678900'},
-      {name: 'Adresse : 2 rue des champs'},
-
-    ]
-  },
-];
+import { DetailArticleDialogueComponent } from '../detail-article-dialogue/detail-article-dialogue.component';
+import { MatDialog } from '@angular/material';
+import { AnnulerCommandeDialogueComponent } from '../annuler-commande-dialogue/annuler-commande-dialogue.component';
 
 @Component({
   selector: 'app-mescommandes',
@@ -27,12 +9,13 @@ const TREE_DATA: FoodNode[] = [
   styleUrls: ['./mescommandes.component.css']
 })
 export class MescommandesComponent {
-  treeControl = new NestedTreeControl<FoodNode>(node => node.children);
-  dataSource = new MatTreeNestedDataSource<FoodNode>();
+  panelOpenState = false;
 
-  constructor() {
-    this.dataSource.data = TREE_DATA;
-  }
 
-  hasChild = (_: number, node: FoodNode) => !!node.children && node.children.length > 0;
+constructor(public dialog: MatDialog) {}
+
+openDialog() {
+  this.dialog.open(AnnulerCommandeDialogueComponent, {
+  });
+}
 }

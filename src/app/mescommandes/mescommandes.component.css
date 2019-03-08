@@ -12,11 +12,10 @@
   position: fixed;
 }
 
+
 .row {
   margin-top:6%;
   margin-left:25%;
-  height: 100%;
-  width: 100%;
 }
 
 .example-tree-invisible {
@@ -37,13 +36,21 @@ height: 80%;
 .bold
 {
  font-weight: bold;
+ color:black;
+ margin-left:-90%
+}
+
+.bold2
+{
+ font-weight: bold;
+ color:black;
 }
 
 .minuscule{
 font-size:12px;
 }
 
-.mat-tree-node-bold {
+.mat-expansion-panel-header {
   font-weight: bold;
   border: 1px solid lightgray;
   background-color: #F3F3F3;
@@ -53,4 +60,63 @@ ul {
   border: 1px solid lightgray;
   width:100%;
 
+}
+
+.status
+{
+  margin-top:16%;
+  color:green;
+}
+
+.encours
+{
+  margin-top:18%;
+  color:orangered;
+}
+
+.validation
+  {
+    margin-top:18%;
+    color:grey;
+  }
+
+.annuler
+{
+  margin-top:18%;
+  color:red;
+}
+
+.margin{
+  margin-top:4%;
+}
+
+.button {
+  background-color:#25274d;
+  color:white;
+  border-radius: 50px;
+}
+
+.button2 {
+  background-color:#25274d;
+  color:white;
+  border-radius: 50px;
+  margin-left:10%;
+}
+
+.rowbutton{
+  margin-top:5%;
+  margin-left:44%;
+}
+
+
+.top{
+  margin-top:6%;
+}
+
+.marge{
+  margin-left:-50%;
+}
+
+.marge2{
+  margin-left:-40%;
 }

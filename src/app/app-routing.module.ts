@@ -18,7 +18,6 @@ import { ListeArticleComponent } from './liste-article/liste-article.component';
 import { DetailArticleComponent } from './detail-article/detail-article.component';
 import { PanierComponent } from './panier/panier.component';
 import { CommandeComponent } from './commande/commande.component';
-import { SuiviCommandeComponent } from './suivi-commande/suivi-commande.component';
 import { AdminListeArticleComponent } from './admin-liste-article/admin-liste-article.component';
 import { AccueilCamilleComponent } from './accueil-camille/accueil-camille.component';
 import { AccueilClementComponent } from './accueil-clement/accueil-clement.component';
@@ -43,7 +42,6 @@ const routes: Routes = [
   { path: 'detailarticle', component: DetailArticleComponent},
   { path: 'panier', component: PanierComponent},
   { path: 'commande', component: CommandeComponent},
-  { path: 'suivi-commande', component: SuiviCommandeComponent},
   { path: 'admin-liste-article', component: AdminListeArticleComponent},
   { path: '', component: AccueilComponent},
   { path: 'accueilcamille', component: AccueilCamilleComponent},
