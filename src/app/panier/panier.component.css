@@ -1,18 +1,41 @@
-.materialContainer {
-  left: 50%;
-  width: 900px;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  margin-top: 3.5%;
+.container 		{
+  font-family:'arial';
+  width:150%;
+  height: 12%;
+  margin:80px;
+  margin-top:8.2%;
+  margin-left:18.3%;
+  padding:10px 50px 10px;
+  background-color:#F3F3F3;
+  opacity: 0.9;
+  border-radius: 20px;
+  position: fixed;
 }
 
-.article{
-  height: 181%;
-  width: 68%;
-  overflow-y: scroll;
+.container2 		{
+  font-family:'arial';
+  width:60%;
+  height: 75%;
+  margin:80px;
+  margin-top:8%;
+  margin-left:18%;
+  padding:10px 50px 10px;
+  background-color:white;
+  opacity: 0.95;
+  border-radius: 20px;
   position: fixed;
-  margin-top: -13%;
+}
+
+.blanc {
+color: white;
+}
+
+.infos {
+  margin-top:2%;
+}
+
+.panier {
+  margin-top:18%;
 }
 
 .paiement{
@@ -44,9 +67,6 @@
   margin-left: 135%
 }
 
-.row{
-  margin-top : 2%;
-}
 
 .border-article{
   border-bottom: 1px solid goldenrod;
@@ -79,4 +99,36 @@
 .trait{
   margin-top: 18%;
   border-bottom: 1px solid goldenrod;
+}
+
+.step
+{
+margin-top:10%;
+}
+
+
+.facture
+{
+  margin-top:2%;
+  margin-left:105%;
+}
+
+.containerArticle
+{
+  margin-top:2%;
+  margin-left:15%;
+}
+
+.BtnSuivant {
+  background-color:#25274d;
+  color:white;
+  margin: 14px 0;
+  margin-left:85%;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.card {
+  width:35%;
+  height:40%;
 }

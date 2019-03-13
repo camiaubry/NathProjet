@@ -1,132 +1,170 @@
 <div class="img">
-  <div class="materialContainer">
-    <div class="row">
-      <div class="col-md-8">
-        <mat-card class="article">
-          <mat-card-header>
-            <mat-card-title>
-              <div class="title">Votre panier</div>
-            </mat-card-title>
-          </mat-card-header>
-          <mat-card-content class="content">
-            <div class="prix">Prix à payer</div>
+  <div class="container2">
+      <div id="toggle-linear"></div>
+      <div class="step">
+          <mat-horizontal-stepper [linear]="isLinear" #stepper>
+              <mat-step [completed]="firstFormGroup">
+                <form [formGroup]="firstFormGroup">
+                  <ng-template matStepLabel>Article dans votre panier</ng-template>
+                      <div class="col-md-8 containerArticle">
+                        <mat-card class="article">
+                          <mat-card-header>
+                            <mat-card-title>
+                              <div class="title">Votre panier</div>
+                            </mat-card-title>
+                          </mat-card-header>
+                          <mat-card-content class="content">
+                            <div class="prix">Prix à payer</div>
 
+                            <!--TODO faire un ngFor-->
+                            <div class="row">
+                              <div class="col-md-2">
+                                <img class="img-responsive" src="https://i.etsystatic.com/7469826/r/il/e08f4c/1464410287/il_570xN.1464410287_fa3s.jpg" alt="prewiew"
+                                     width="90" height="110">
+                              </div>
+                              <div class="col-md-6">
+                                <div class="row">
+                                  <div class="nom-article">
+                                    <strong>BODY GARCON STAR WARS</strong>
+                                  </div>
+                                  <div class="prix-article">
+                                    6€
+                                  </div>
+                                  <div class="description">
+                                    <div>
+                                      Taille : 6 mois
+                                    </div>
+                                    <div>
+                                      Marque : IKKS
+                                    </div>
+                                    <div>
+                                      Etat du produit : Excellent
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="supprimer">
+                                  <button mat-button><i class="fa fa-trash"></i> Supprimer</button>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="border-article"></div>
 
-            // TODO faire un ngFor
-            <div class="row">
-              <div class="col-md-2">
-                <img class="img-responsive" src="https://i.etsystatic.com/7469826/r/il/e08f4c/1464410287/il_570xN.1464410287_fa3s.jpg" alt="prewiew"
-                     width="90" height="110">
-              </div>
-              <div class="col-md-6">
-                <div class="row">
-                  <div class="nom-article">
-                    <strong>BODY GARCON STAR WARS</strong>
+                            <div class="row">
+                              <div class="col-md-2">
+                                <img class="img-responsive" src="https://i.etsystatic.com/7469826/r/il/e08f4c/1464410287/il_570xN.1464410287_fa3s.jpg" alt="prewiew"
+                                     width="90" height="110">
+                              </div>
+                              <div class="col-md-6">
+                                <div class="row">
+                                  <div class="nom-article">
+                                    <strong>BODY GARCON STAR WARS</strong>
+                                  </div>
+                                  <div class="prix-article">
+                                    6€
+                                  </div>
+                                  <div class="description">
+                                    <div>
+                                      Taille : 6 mois
+                                    </div>
+                                    <div>
+                                      Marque : IKKS
+                                    </div>
+                                    <div>
+                                      Etat du produit : Excellent
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="supprimer">
+                                  <button mat-button><i class="fa fa-trash"></i> Supprimer</button>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="border-article"></div>
+                          </mat-card-content>
+                        </mat-card>
+
+                        <div class="BtnSuivant">
+                            <button mat-button matStepperNext>Continuez</button>
+                          </div>
+                      </div>
+                </form>
+              </mat-step>
+              <mat-step [stepControl]="secondFormGroup">
+                <form [formGroup]="secondFormGroup">
+                  <ng-template matStepLabel>Adresse d'Expédition</ng-template>
+                    <mat-card-content>
+                      <mat-card (click)="Click()" class="card" >
+                                <mat-card-title> adresse</mat-card-title>
+                                <mat-card-subtitle>e-mail </mat-card-subtitle>
+                      </mat-card>
+                        </mat-card-content>
+                  <div>
+                    <button mat-button matStepperPrevious>Back</button>
+                    <button mat-button matStepperNext>Next</button>
                   </div>
-                  <div class="prix-article">
-                    6€
-                  </div>
-                  <div class="description">
-                    <div>
-                      Taille : 6 mois
-                    </div>
-                    <div>
-                      Marque : IKKS
-                    </div>
-                    <div>
-                      Etat du produit : Excellent
-                    </div>
-                  </div>
+                </form>
+              </mat-step>
+              <mat-step>
+                <ng-template matStepLabel>Choix du point Relais</ng-template>
+                You are now done.
+                <div>
+                  <button mat-button matStepperPrevious>Back</button>
+                  <button mat-button (click)="stepper.reset()">Reset</button>
                 </div>
-                <div class="supprimer">
-                  <button mat-button><i class="fa fa-trash"></i> Supprimer</button>
-                </div>
-
-              </div>
-            </div>
-
-            <div class="border-article"></div>
-
-            <div class="row">
-              <div class="col-md-2">
-                <img class="img-responsive" src="https://i.etsystatic.com/7469826/r/il/e08f4c/1464410287/il_570xN.1464410287_fa3s.jpg" alt="prewiew"
-                     width="90" height="110">
-              </div>
-              <div class="col-md-6">
-                <div class="row">
-                  <div class="nom-article">
-                    <strong>BODY GARCON STAR WARS</strong>
-                  </div>
-                  <div class="prix-article">
-                    6€
-                  </div>
-                  <div class="description">
-                    <div>
-                      Taille : 6 mois
-                    </div>
-                    <div>
-                      Marque : IKKS
-                    </div>
-                    <div>
-                      Etat du produit : Excellent
-                    </div>
-                  </div>
-                </div>
-                <div class="supprimer">
-                  <button mat-button><i class="fa fa-trash"></i> Supprimer</button>
-                </div>
-
-              </div>
-            </div>
-
-            <div class="border-article"></div>
-
-          </mat-card-content>
-        </mat-card>
+              </mat-step>
+            </mat-horizontal-stepper>
       </div>
-
-      <div class="col-md-4">
-        <mat-card class="paiement">
-          <mat-card-header>
-            <mat-card-title>
-                <button mat-button class="valider">Paiement</button>
-            </mat-card-title>
-          </mat-card-header>
-          <mat-card-content class="content-total">
-            <div class="row">
-              <div class="col-md-8 total">
-                Achat
-              </div>
-              <div class="col-md-4">
-                12€
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-8 total">
-                Frais de port
-              </div>
-              <div class="col-md-4">
-                4€
-              </div>
-            </div>
-
-            <div class="trait"></div>
-
-            <div class="row total-cde">
-              <div class="col-md-8">
-                Total
-              </div>
-              <div class="col-md-4">
-                16€
-              </div>
-            </div>
-          </mat-card-content>
-        </mat-card>
-      </div>
-
-
-    </div>
 
   </div>
+      <div class="container">
+        <div class="row infos">
+            <div class="col-sm-4"><i class="fas fa-gift"></i> Livraison gratuite<br>&nbsp; &nbsp; pour les commandes de plus de <br>&nbsp; &nbsp;  50,00 €</div>
+            <div class="col-sm-4"><i class="fas fa-dice-d6"></i> Retours sans condition <br>&nbsp; &nbsp; sous 15 jours</div>
+            <div class="col-sm-4"><i class="fas fa-shield-alt"></i> Paiements sécurisés à 100%<br>&nbsp; &nbsp; et politique de remboursement  <br>&nbsp; &nbsp;  fiable</div>
+        </div>
+
+        <div class="col-md-4 facture">
+            <mat-card class="paiement">
+              <mat-card-header>
+                <mat-card-title>
+                  <a class="blanc" href="/#/commande">
+                    <button mat-button class="valider">Paiement</button>
+                  </a>
+                </mat-card-title>
+              </mat-card-header>
+              <mat-card-content class="content-total">
+                <div class="row">
+                  <div class="col-md-8 total">
+                    Achat
+                  </div>
+                  <div class="col-md-4">
+                    12€
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-8 total">
+                    Frais de port
+                  </div>
+                  <div class="col-md-4">
+                    4€
+                  </div>
+                </div>
+
+                <div class="trait"></div>
+
+                <div class="row total-cde">
+                  <div class="col-md-8">
+                    Total
+                  </div>
+                  <div class="col-md-4">
+                    16€
+                  </div>
+                </div>
+              </mat-card-content>
+            </mat-card>
+          </div>
+
+
+</div>
 </div>

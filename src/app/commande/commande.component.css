@@ -1,27 +1,14 @@
-.img {
-    width: 110%;
-    height:100%;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-position: center center;
-    background-repeat:  no-repeat;
-    background-attachment: fixed;
-    background-size:  cover;
-
-  }
-
   .container 		{
     font-family:'arial';
     width:40%;
     height: 76%;
     margin-bottom:20%;
+    margin-top:8%;
     margin-left:28%;
     padding:10px 50px 10px;
     background-color:white;
     opacity: 0.9;
-    border-radius: 20px;  
+    border-radius: 20px;
     position: fixed;
   }
 
@@ -36,11 +23,11 @@
 .checkout-wrapper{padding-top: 40px; padding-bottom:40px; background-color: #fafbfa;}
 .checkout{    background-color: #fff;
     border:1px solid #eaefe9;
-     
+
     font-size: 14px;}
 .panel{margin-bottom: 0px;}
 .checkout-step {
-     
+
     border-top: 1px solid #f2f2f2;
     color: #666;
     font-size: 14px;
@@ -63,7 +50,7 @@
     font-weight: 500;
     vertical-align: middle;display: inline-block; margin: 0px;
      }
- 
+
 
 .checout-address-step .form-group{margin-bottom: 18px;display: inline-block;
     width: 100%;}
@@ -102,10 +89,10 @@
 .login-phone .form-control {
     padding-left: 68px;
     font-size: 14px;
-    
+
 }
 .checkout-login .btn{height: 42px;     line-height: 1.8;}
- 
+
 .otp-verifaction{margin-top: 30px;}
 .checkout-sidebar{background-color: #fff;
     border:1px solid #eaefe9; padding: 30px; margin-bottom: 30px;}
