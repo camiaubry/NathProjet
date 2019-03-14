@@ -28,7 +28,7 @@ export class PanierComponent implements OnInit {
 
   Click() {
     alert('Adresse Sélectionnée') ;
-    let snackbar = document.getElementById('snackbar');
-    snackbar.style.backgroundColor = 'blue';
+    let matCard = document.getElementById('snackbar');
+    matCard.style.backgroundColor = 'red';
   }
 }

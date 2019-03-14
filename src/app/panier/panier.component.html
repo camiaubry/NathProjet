@@ -84,7 +84,7 @@
                         </mat-card>
 
                         <div class="BtnSuivant">
-                            <button mat-button matStepperNext>Continuez</button>
+                            <button mat-button matStepperNext>Continuer</button>
                           </div>
                       </div>
                 </form>
@@ -92,15 +92,55 @@
               <mat-step [stepControl]="secondFormGroup">
                 <form [formGroup]="secondFormGroup">
                   <ng-template matStepLabel>Adresse d'Expédition</ng-template>
-                    <mat-card-content>
-                      <mat-card (click)="Click()" class="card" >
-                                <mat-card-title> adresse</mat-card-title>
-                                <mat-card-subtitle>e-mail </mat-card-subtitle>
-                      </mat-card>
-                        </mat-card-content>
-                  <div>
-                    <button mat-button matStepperPrevious>Back</button>
-                    <button mat-button matStepperNext>Next</button>
+                      <div class="row">
+                            <div class="col-md-6">
+                       <mat-card-content>
+                          <mat-card (click)="Click()" class="card" id="matCard">
+                          <mat-card-subtitle>Martin DUPONT</mat-card-subtitle>
+                          <div class="trait2"></div>
+                          <mat-card-subtitle> 2 rue des prout <br>63100 CLERMONT-FERRAND</mat-card-subtitle>       
+                          </mat-card>
+                          </mat-card-content>
+                          </div>
+                  
+                        <div class="col-md-6">
+                       <mat-card-content>
+                        <mat-card (click)="Click()" class="card" id="matCard">
+                        <mat-card-subtitle>Martin DUPONT</mat-card-subtitle>
+                        <div class="trait2"></div>
+                        <mat-card-subtitle> 2 rue des prout <br>63100 CLERMONT-FERRAND</mat-card-subtitle>       
+                        </mat-card>
+                        </mat-card-content>
+                          </div>
+                        </div>
+
+                    <div>
+                        <mat-form-field >
+                            <input matInput placeholder="Nom" formControlName="secondCtrl" required>
+                          </mat-form-field>
+                          <mat-form-field class="space">
+                              <input  matInput placeholder="Prénom" formControlName="secondCtrl" required>
+                            </mat-form-field>
+                    </div>
+
+                    <div>
+                        <mat-form-field class="sizeAdress">
+                            <input matInput placeholder="Adresse" formControlName="secondCtrl" required>
+                          </mat-form-field>
+                    </div>
+
+                    <div class="margin">
+                        <mat-form-field >
+                            <input matInput placeholder="Code Postal" formControlName="secondCtrl" required>
+                          </mat-form-field>
+                          <mat-form-field class="space" >
+                              <input matInput placeholder="Ville" formControlName="secondCtrl" required>
+                            </mat-form-field>
+                    </div>
+
+                  <div >
+                    <button class="BtnSuivant1" mat-button matStepperPrevious>Retour</button>
+                    <button class="BtnPredt" mat-button matStepperNext>Continuer</button>
                   </div>
                 </form>
               </mat-step>
@@ -108,7 +148,7 @@
                 <ng-template matStepLabel>Choix du point Relais</ng-template>
                 You are now done.
                 <div>
-                  <button mat-button matStepperPrevious>Back</button>
+                  <button  mat-button matStepperPrevious>Back</button>
                   <button mat-button (click)="stepper.reset()">Reset</button>
                 </div>
               </mat-step>

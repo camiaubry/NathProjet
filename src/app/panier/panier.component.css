@@ -101,6 +101,11 @@ color: white;
   border-bottom: 1px solid goldenrod;
 }
 
+.trait2{
+  margin-top: 1%;
+  border-bottom: 1px solid goldenrod;
+}
+
 .step
 {
 margin-top:10%;
@@ -126,9 +131,47 @@ margin-top:10%;
   margin-left:85%;
   border-radius: 50px;
   overflow: hidden;
+  font-size:4px;
+}
+
+.BtnSuivant1 {
+  background-color:#25274d;
+  color:white;
+  margin: 10px 0;
+  margin-left:80%;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.BtnPredt {
+  background-color:#25274d;
+  color:white;
+  margin: 10px 0;
+  margin-left:2%;
+  border-radius: 50px;
+  overflow: hidden;
 }
 
 .card {
-  width:35%;
-  height:40%;
+  width:65%;
+  height:100%;
 }
+
+.space
+{
+  margin-left:4%;
+}
+
+.sizeAdress{
+  width:40% !important;
+}
+
+.btnEdit{
+  background-color:#25274d;
+  color:white;
+  border-radius: 50px;
+  overflow: hidden;
+  height: 2%;
+  width:2%;
+}
+
