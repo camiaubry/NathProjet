@@ -33,10 +33,17 @@
                 </mat-menu>
             </div>
             <div class="param2">
-                <button mat-button matBadge="2" matBadgeSize="medium" matBadgePosition="after" matBadgeColor="primary" (click)="redirectPanier()">
-                    <div>
-                        <i class="fas fa-shopping-bag"></i> Mon panier
-                    </div>
+                <button mat-button matBadge="1" matBadgeSize="medium" matBadgePosition="after" matBadgeColor="primary"  data-toggle="dropdown" (click)="redirectPanier()">
+                    <div class="btn-group show-on-hover">
+                          <i class="fas fa-shopping-bag"></i> &nbsp;Mon panier
+                        <ul class="dropdown-menu" role="menu">
+                          <p> &nbsp;Valeur de la commande : 5,00 €</p>
+                          <p class="text"> &nbsp;Livraison standard : 5,00 €</p>
+                          <div class="trait"></div>
+                          <li><b> &nbsp;TOTAL : 10,00 €</b></li>
+                          <button mat-button class="valider">Voir panier</button>
+                        </ul>
+                      </div>
                 </button>
             </div>
             <div class="param3">

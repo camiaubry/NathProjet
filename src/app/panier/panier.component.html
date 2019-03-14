@@ -97,18 +97,18 @@
                        <mat-card-content>
                           <mat-card (click)="Click()" class="card" id="matCard">
                           <mat-card-subtitle>Martin DUPONT</mat-card-subtitle>
-                          <div class="trait2"></div>
-                          <mat-card-subtitle> 2 rue des prout <br>63100 CLERMONT-FERRAND</mat-card-subtitle>       
+                          <mat-card-subtitle class="trait2"></mat-card-subtitle>
+                          <mat-card-subtitle>2 rue des prout <br>63100 CLERMONT-FERRAND</mat-card-subtitle>       
                           </mat-card>
                           </mat-card-content>
                           </div>
-                  
+
                         <div class="col-md-6">
                        <mat-card-content>
                         <mat-card (click)="Click()" class="card" id="matCard">
-                        <mat-card-subtitle>Martin DUPONT</mat-card-subtitle>
-                        <div class="trait2"></div>
-                        <mat-card-subtitle> 2 rue des prout <br>63100 CLERMONT-FERRAND</mat-card-subtitle>       
+                        <mat-card-subtitle><i class="fas fa-plus-circle"></i> </mat-card-subtitle>
+                        <mat-card-subtitle class="trait2"></mat-card-subtitle>
+                        <mat-card-subtitle>Ajouter une nouvelle adresse</mat-card-subtitle>       
                         </mat-card>
                         </mat-card-content>
                           </div>
@@ -138,7 +138,7 @@
                             </mat-form-field>
                     </div>
 
-                  <div >
+                  <div>
                     <button class="BtnSuivant1" mat-button matStepperPrevious>Retour</button>
                     <button class="BtnPredt" mat-button matStepperNext>Continuer</button>
                   </div>
@@ -167,9 +167,9 @@
             <mat-card class="paiement">
               <mat-card-header>
                 <mat-card-title>
-                  <a class="blanc" href="/#/commande">
-                    <button mat-button class="valider">Paiement</button>
-                  </a>
+                  <div>
+                        <button mat-button class="valider">Paiement</button>
+                  </div>
                 </mat-card-title>
               </mat-card-header>
               <mat-card-content class="content-total">

@@ -23,7 +23,7 @@ overflow-y: scroll;
 
   }
 
-  
+
   h3.h3{text-align:center;margin:1em;text-transform:capitalize;font-size:1.7em;}
 
 /********************* shopping Demo-1 **********************/
@@ -168,7 +168,7 @@ overflow-y: scroll;
 	width: 100%;
   margin:0;
 }
-.navigation ul li .children  a {  
+.navigation ul li .children  a {
     display: block;
     font-family: "Montserrat", sans-serif;
     text-transform: uppercase;

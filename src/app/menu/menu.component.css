@@ -7,7 +7,7 @@
 }
 
 .param{
-    margin-left:25%;
+    margin-left:35%;
 }
 
 .param2{
@@ -16,6 +16,10 @@
 
 .param3{
     margin-left:1%;
+}
+
+.fa-shopping-bag {
+  margin-top:10%;
 }
 
 .size{
@@ -45,15 +49,34 @@
     background-image: url(src\assets\imgs2\accueil-mixte.png);
   }
 
-  
+  .trait{
+    margin-top: 2%;
+    border-bottom: 1px solid goldenrod;
+  }
 
+  p{
+    font-size: small;
+  }
 
+  .text{
+    margin-top:-7%;
+    margin-bottom: -2%;
+  }
 
+  .valider {
+    background-color: goldenrod;
+    margin-left: 40%;
+    border-radius: 50px;
+  }
 
+.dropdown-menu{
+  min-width: 15rem;
+  visibility: visible;
+}
 
   /* --------------------------------------------------------- */
 
- 
+
   .container2 		{
     font-family:'arial';
     width:100%;
@@ -64,8 +87,8 @@
     background-color:#F8F9FA;
     font-weight: bold;
   }
-  
-  
+
+
   .wrapper{
     z-index: 4;
     position: fixed;
@@ -159,7 +182,7 @@
       width: 100%;
     margin:0;
   }
-  .navigation ul li .children  a {  
+  .navigation ul li .children  a {
       display: block;
       font-family: "Montserrat", sans-serif;
       text-transform: uppercase;
@@ -181,6 +204,8 @@
   .navigation ul li a:hover{
     color:goldenrod;
   }
-  
-  
-  
+
+/* panier */
+  .show-on-hover:hover > ul.dropdown-menu {
+    display: block;
+  }

@@ -74,7 +74,7 @@ color: white;
   margin-top:2%;
 }
 
-.valider{
+.valider {
   background-color: goldenrod;
   margin-left: 20%;
   width: 200%;
@@ -175,3 +175,11 @@ margin-top:10%;
   width:2%;
 }
 
+.adress{
+  margin-top:8%;
+}
+
+
+.border{
+  border-style: dashed;
+}

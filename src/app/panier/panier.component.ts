@@ -31,4 +31,7 @@ export class PanierComponent implements OnInit {
     let matCard = document.getElementById('snackbar');
     matCard.style.backgroundColor = 'red';
   }
+
+  BtnDisabled() {
+  }
 }
