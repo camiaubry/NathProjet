@@ -6,46 +6,46 @@
           <form class="example-form">
 
             <mat-form-field class="example-full-width">
-              <input matInput placeholder="Nom :" value="Dupont" />
+              <input matInput placeholder="Nom :" value="Dupont" [(ngModel)]="nom" name="nom" />
             </mat-form-field>
 
             <mat-form-field class="example-full-width">
-              <input matInput placeholder="Prénom :" value="Martine" />
+              <input matInput placeholder="Prénom :" value="Martine" [(ngModel)]="prenom" name="prenom" />
             </mat-form-field>
 
             <mat-form-field class="example-full-width">
-            <input matInput placeholder="Adresse :" value="2 rue des petits prouts">
+            <input matInput placeholder="Adresse :" value="2 rue des petits prouts" [(ngModel)]="rue" name="rue">
             </mat-form-field>
 
            <mat-form-field class="example-full-width">
-              <input matInput placeholder="Code Postal :" value="63000" />
+              <input matInput placeholder="Code Postal :" value="63000" [(ngModel)]="cp" name="cp" />
             </mat-form-field>
 
             <mat-form-field class="example-full-width">
-              <input matInput placeholder="Ville :" value="Clermont-Ferrand" />
+              <input matInput placeholder="Ville :" value="Clermont-Ferrand" [(ngModel)]="ville" name="ville" />
             </mat-form-field>
 
            <mat-form-field class="example-full-width">
-              <input matInput placeholder="E-mail :" value="dupont.martine@mail.com"/>
+              <input matInput placeholder="E-mail :" value="dupont.martine@mail.com" [(ngModel)]="email" name="email"/>
             </mat-form-field>
           </form>
 
-          <button mat-button class="button"> Modifier vos informations personnelles</button>
+          <button mat-button class="button" (click)="modifier()"> Modifier vos informations personnelles</button>
         </mat-tab>
 
         <mat-tab label="Modifier votre mot de passe">
           <form class="example-form">
             <mat-form-field class="example-full-width">
-              <input type="password" matInput placeholder="Saissisez votre mot de passe actuel" [type]="hide ? 'password' : 'text'"/>
+              <input type="password" matInput placeholder="Saissisez votre mot de passe actuel" [type]="hide ? 'password' : 'text'" [(ngModel)]="mpactuel" name="mpactuel"/>
               <mat-icon matSuffix (click)="hide = !hide">{{hide ? "visibility_off" : "visibility"}}</mat-icon>
             </mat-form-field>
 
             <mat-form-field class="example-full-width">
-              <input type="password" matInput placeholder="Saissisez votre nouveau mot de passe" [type]="hide ? 'password' : 'text'"/>
+              <input type="password" matInput placeholder="Saissisez votre nouveau mot de passe" [type]="hide ? 'password' : 'text'" [(ngModel)]="newmp" name="newmp"/>
               <mat-icon matSuffix (click)="hide = !hide">{{hide ? "visibility_off" : "visibility"}}</mat-icon></mat-form-field>
 
             <mat-form-field class="example-full-width">
-              <input type="password" matInput placeholder="Confirmez votre nouveau mot de passe" [type]="hide ? 'password' : 'text'"/>
+              <input type="password" matInput placeholder="Confirmez votre nouveau mot de passe" [type]="hide ? 'password' : 'text'" [(ngModel)]="confirmemp" name="confirmemp"/>
               <mat-icon matSuffix (click)="hide = !hide">{{hide ? "visibility_off" : "visibility"}}</mat-icon>
 
             </mat-form-field>

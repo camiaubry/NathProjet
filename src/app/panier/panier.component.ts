@@ -1,6 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {STEPPER_GLOBAL_OPTIONS} from '@angular/cdk/stepper';
+import {Panier} from '../model/panier';
+import {PanierService} from "../service/panier/panier.service";
+import {ArticleService} from "../service/article/article.service";
+import { Article } from '../model/article';
 
 @Component({
   selector: 'app-panier',
@@ -15,7 +19,18 @@ export class PanierComponent implements OnInit {
   firstFormGroup: FormGroup;
   secondFormGroup: FormGroup;
 
-  constructor(private _formBuilder: FormBuilder) {}
+  articleBean : string;
+  commandeBean : string;
+  titre : string;
+  categorie: string;
+  prix: Number;
+  age: string;
+  reference: string;
+  photo: Blob;
+  marque: string;
+  qualite: string;
+
+  constructor(private _formBuilder: FormBuilder, private panierService : PanierService) {}
 
   ngOnInit() {
     this.firstFormGroup = this._formBuilder.group({
@@ -34,4 +49,25 @@ export class PanierComponent implements OnInit {
 
   BtnDisabled() {
   }
+
+  modifier() {
+    const panier = new Panier();
+    panier.articleBean = this.articleBean;
+    panier.commandeBean = this.commandeBean;
+    const article = new Article();
+    article.titre = this.titre;
+    article.categorie = this.categorie;
+    article.prix = this.prix;
+    article.age = this.age;
+    article.reference = this.reference;
+    article.photo = this.photo;
+    article.marque = this.marque;
+    article.qualite = this.qualite;
+    this.panierService.delete(panier).subscribe(client=>{
+      console.log(panier)});
+
+  }
+
+  
+
 }
