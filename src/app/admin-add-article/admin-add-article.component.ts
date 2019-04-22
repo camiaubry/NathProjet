@@ -16,9 +16,11 @@ export class AdminAddArticleComponent implements OnInit {
   age?: string;
   reference?: string;
   photo?: Blob;
+  photo2?: Blob;
   marque?: string;
   qualite?: string;
   fileName : string;
+  fileName2 : string;
 
 
   constructor(private articleService : ArticleService) { }
@@ -29,7 +31,7 @@ export class AdminAddArticleComponent implements OnInit {
     })
   }
 
-  valider(){
+  sauvegarder(){
     const article = new Article();
     article.titre=this.titre;
     article.categorie=this.categorie;
@@ -37,8 +39,10 @@ export class AdminAddArticleComponent implements OnInit {
     article.age=this.age;
     article.reference=this.reference;
     article.photo=this.photo;
+    article.photo2=this.photo2;
     article.marque=this.marque;
     article.qualite=this.qualite;
+    console.log(article)
     this.articleService.create(article).subscribe(article=>{
       console.log(article)
     })

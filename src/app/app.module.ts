@@ -71,7 +71,6 @@ import { DetailArticleDialogueComponent } from './detail-article-dialogue/detail
 import { CommandeComponent } from './commande/commande.component';
 import { GuidetailleDialogueComponent } from './guidetaille-dialogue/guidetaille-dialogue.component';
 import { AdminListeDialogueComponent } from './admin-liste-dialogue/admin-liste-dialogue.component';
-import { HttpClient } from 'selenium-webdriver/http';
 import { HttpClientModule } from '@angular/common/http';
 import { ArticleService } from './service/article/article.service';
 import { AdminListeArticleComponent } from './admin-liste-article/admin-liste-article.component';
@@ -119,7 +118,6 @@ import { MescommandesComponent } from './mescommandes/mescommandes.component';
   ],
   imports: [
     BrowserModule,
-    HttpModule,
     HttpClientModule,
     ReactiveFormsModule,
     FormsModule,

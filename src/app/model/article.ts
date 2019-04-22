@@ -8,6 +8,7 @@ export class Article {
     public age?: string,
     public reference?: string,
     public photo?: Blob,
+    public photo2?: Blob,
     public marque?: string,
     public qualite?: string
   ) {}

@@ -3,12 +3,12 @@
 
     <form class="form">
       <mat-form-field class="input-mat">
-        <input matInput placeholder="Titre">
+        <input matInput placeholder="Titre" [(ngModel)]="titre" name="titre">
       </mat-form-field>
     </form>
     <form class="form">
       <mat-form-field class="input-mat">
-        <input matInput placeholder="Description">
+        <input matInput placeholder="Description" [(ngModel)]="description" name="description">
       </mat-form-field>
     </form>
 
@@ -16,7 +16,7 @@
     <div class="row">
       <form class="form">
         <mat-form-field>
-          <mat-select placeholder="Catégorie">
+          <mat-select placeholder="Catégorie" [(ngModel)]="categorie" name="categorie">
             <mat-option></mat-option>
             <mat-option value="haut">Haut</mat-option>
             <mat-option value="bas">Bas</mat-option>
@@ -26,12 +26,12 @@
       </form>
       <form class="form">
         <mat-form-field class="input-mat">
-          <input matInput placeholder="Référence">
+          <input matInput placeholder="Référence" [(ngModel)]="reference" name="reference">
         </mat-form-field>
       </form>
       <form class="form">
         <mat-form-field>
-          <mat-select placeholder="Age">
+          <mat-select placeholder="Age" [(ngModel)]="age" name="age">
             <mat-option></mat-option>
             <mat-option>0 mois</mat-option>
             <mat-option>1 mois</mat-option>
@@ -45,13 +45,13 @@
     <div class="row">
       <form class="form">
         <mat-form-field class="input-mat">
-          <input type="number" matInput placeholder="Prix">
+          <input type="number" matInput placeholder="Prix" [(ngModel)]="prix" name="prix">
         </mat-form-field>
       </form>
 
       <form class="form">
         <mat-form-field>
-          <mat-select placeholder="Marque">
+          <mat-select placeholder="Marque" [(ngModel)]="marque" name="marque">
             <mat-option></mat-option>
             <mat-option>IKKS</mat-option>
             <mat-option>Orchestra</mat-option>
@@ -61,7 +61,7 @@
       </form>
       <form class="form">
         <mat-form-field>
-          <mat-select placeholder="Qualité">
+          <mat-select placeholder="Qualité" [(ngModel)]="qualite" name="qualite">
             <mat-option></mat-option>
             <mat-option>Neuf</mat-option>
             <mat-option>Bon état</mat-option>
@@ -72,17 +72,17 @@
     </div>
 
     <div class="form">     
-      <input type="file" #fileImportInput name="File Upload" id="txtFileUpload"/>
+      <input type="file" #fileImportInput name="File Upload" [(ngModel)]="photo"/>
       {{fileName}}
     </div>
 
     <div class="form">     
-      <input type="file" #fileImportInput name="File Upload" id="txtFileUpload"/>
-      {{fileName}}
+      <input type="file" #fileImportInput name="File Upload" [(ngModel)]="photo2"/>
+      {{fileName2}}
     </div>
 
     <div class="button save">
-      <button>Sauvegarder</button>
+      <button (click)="sauvegarder()">Sauvegarder</button>
     </div>
 
 
