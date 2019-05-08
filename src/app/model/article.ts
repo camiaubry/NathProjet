@@ -10,7 +10,8 @@ export class Article {
     public photo?: Blob,
     public photo2?: Blob,
     public marque?: string,
-    public qualite?: string
+    public qualite?: string,
+    public genre?:string
   ) {}
 
 

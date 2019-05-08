@@ -64,7 +64,8 @@ export class PanierComponent implements OnInit {
     article.marque = this.marque;
     article.qualite = this.qualite;
     this.panierService.delete(panier).subscribe(client=>{
-      console.log(panier)});
+      console.log(panier)
+    });
 
   }
 
