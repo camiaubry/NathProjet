@@ -1,338 +1,97 @@
 <!--Menu filtre-->
 <div class="wrapper">
-    <div class="container2">
-        <!--Navigation Start-->
-        <nav class="navigation">
-            <ul>
-                <li class="active">
-                    <a>TRIE PAR</a>
-                    <ul class="children sub-menu">
-                        <li>
-                            <a>Plus récent</a>
-                        </li>
-                        <li>
-                            <a>Plus bas prix</a>
-                        </li>
-                        <li>
-                            <a>Prix le plus élevé</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a>TYPE DE PRODUIT</a>
-                    <ul class="children sub-menu">
-                        <li>
-                            <a>Body</a>
-                        </li>
-                        <li>
-                            <a>Haut</a>
-                        </li>
-                        <li>
-                            <a>Pantalon</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a>TAILLE</a>
-                    <ul class="children sub-menu">
-                        <li>
-                            <a>0-3 mois</a>
-                        </li>
-                        <li>
-                            <a>6-9 mois</a>
-                        </li>
-                        <li>
-                            <a>9-12 mois</a>
-                        </li>
-                        <li>
-                            <a>plus d'un an</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    
-                    </li>
-                    <li>
-            </ul>
-        </nav>
-        <!--Navigation End-->
-    </div>
+  <div class="container2">
+    <!--Navigation Start-->
+    <nav class="navigation">
+      <ul>
+        <li class="active">
+          <a>TRIE PAR</a>
+          <ul class="children sub-menu">
+            <li>
+              <a>Plus récent</a>
+            </li>
+            <li>
+              <a>Plus bas prix</a>
+            </li>
+            <li>
+              <a>Prix le plus élevé</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a>TYPE DE PRODUIT</a>
+          <ul class="children sub-menu">
+            <li>
+              <a>Body</a>
+            </li>
+            <li>
+              <a>Haut</a>
+            </li>
+            <li>
+              <a>Pantalon</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a>TAILLE</a>
+          <ul class="children sub-menu">
+            <li>
+              <a>0-3 mois</a>
+            </li>
+            <li>
+              <a>6-9 mois</a>
+            </li>
+            <li>
+              <a>9-12 mois</a>
+            </li>
+            <li>
+              <a>plus d'un an</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+
+        </li>
+        <li>
+      </ul>
+    </nav>
+    <!--Navigation End-->
+  </div>
 </div>
 
 <!--article-->
 <div class="container scroller">
-    <div class="row">
-        <div class="col-md-3 col-sm-6">
-            <div class="product-grid">
-                <div class="product-image">
+  <div class="row">
+    <div class="col-md-3 col-sm-6"  *ngFor="let article of listeArticles">
+      <div class="product-grid">
+        <div >
+          <div class="product-image">
 
-                    <img class="pic-1" src="https://i.etsystatic.com/7469826/r/il/e08f4c/1464410287/il_570xN.1464410287_fa3s.jpg">
-                    <img class="pic-2" src="https://i.etsystatic.com/7469826/r/il/e43fb9/1685703290/il_570xN.1685703290_5fti.jpg">
+            <img class="pic-1" src="https://i.etsystatic.com/7469826/r/il/e08f4c/1464410287/il_570xN.1464410287_fa3s.jpg">
+            <img class="pic-2" src="https://i.etsystatic.com/7469826/r/il/e43fb9/1685703290/il_570xN.1685703290_5fti.jpg">
 
-                    <ul class="social">
-                        <li>
-                            <a href="#/detailarticle" data-tip="Détails">
-                                <i class="fa fa-search"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a (click)="openDialog()" data-tip="Ajouter au panier">
-                                <i class="fas fa-shopping-bag"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="product-content">
-                    <h3 class="title">
-                        <a href="#">Body Enfant Garçon</a>
-                    </h3>
-                    <div class="price">5,00 €
-                    </div>
-                    <br>
-                </div>
+            <ul class="social">
+              <li>
+                <a href="#/detailarticle" data-tip="Détails">
+                  <i class="fa fa-search"></i>
+                </a>
+              </li>
+              <li>
+                <a (click)="ajoutPanier(article)" data-tip="Ajouter au panier">
+                  <i class="fas fa-shopping-bag"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="product-content">
+            <h3 class="title">
+              <a href="#">{{article.titre}}</a>
+            </h3>
+            <div class="price">{{article.prix}} €
             </div>
+            <br>
+          </div>
         </div>
-
-
-        <div class="col-md-3 col-sm-6">
-            <div class="product-grid">
-                <div class="product-image">
-
-                    <img class="pic-1" src="https://i.etsystatic.com/7469826/r/il/e08f4c/1464410287/il_570xN.1464410287_fa3s.jpg">
-                    <img class="pic-2" src="https://i.etsystatic.com/7469826/r/il/e43fb9/1685703290/il_570xN.1685703290_5fti.jpg">
-
-                    <ul class="social">
-                        <li>
-                            <a href="#/detailarticle" data-tip="Détails">
-                                <i class="fa fa-search"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a (click)="openDialog()" data-tip="Ajouter au panier">
-                                <i class="fas fa-shopping-bag"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="product-content">
-                    <h3 class="title">
-                        <a href="#">Body Enfant Garçon</a>
-                    </h3>
-                    <div class="price">5,00 €
-                    </div>
-                    <br>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-            <div class="product-grid">
-                <div class="product-image">
-
-                    <img class="pic-1" src="https://i.etsystatic.com/7469826/r/il/e08f4c/1464410287/il_570xN.1464410287_fa3s.jpg">
-                    <img class="pic-2" src="https://i.etsystatic.com/7469826/r/il/e43fb9/1685703290/il_570xN.1685703290_5fti.jpg">
-
-                    <ul class="social">
-                        <li>
-                            <a href="#/detailarticle" data-tip="Détails">
-                                <i class="fa fa-search"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a (click)="openDialog()" data-tip="Ajouter au panier">
-                                <i class="fas fa-shopping-bag"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="product-content">
-                    <h3 class="title">
-                        <a href="#">Body Enfant Garçon</a>
-                    </h3>
-                    <div class="price">5,00 €
-                    </div>
-                    <br>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-            <div class="product-grid">
-                <div class="product-image">
-
-                    <img class="pic-1" src="https://i.etsystatic.com/7469826/r/il/e08f4c/1464410287/il_570xN.1464410287_fa3s.jpg">
-                    <img class="pic-2" src="https://i.etsystatic.com/7469826/r/il/e43fb9/1685703290/il_570xN.1685703290_5fti.jpg">
-
-                    <ul class="social">
-                        <li>
-                            <a href="#/detailarticle" data-tip="Détails">
-                                <i class="fa fa-search"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a (click)="openDialog()" data-tip="Ajouter au panier">
-                                <i class="fas fa-shopping-bag"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="product-content">
-                    <h3 class="title">
-                        <a href="#">Body Enfant Garçon</a>
-                    </h3>
-                    <div class="price">5,00 €
-                    </div>
-                    <br>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-3 col-sm-6">
-            <div class="product-grid">
-                <div class="product-image">
-
-                    <img class="pic-1" src="https://i.etsystatic.com/7469826/r/il/e08f4c/1464410287/il_570xN.1464410287_fa3s.jpg">
-                    <img class="pic-2" src="https://i.etsystatic.com/7469826/r/il/e43fb9/1685703290/il_570xN.1685703290_5fti.jpg">
-
-                    <ul class="social">
-                        <li>
-                            <a href="#/detailarticle" data-tip="Détails">
-                                <i class="fa fa-search"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a (click)="openDialog()" data-tip="Ajouter au panier">
-                                <i class="fas fa-shopping-bag"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="product-content">
-                    <h3 class="title">
-                        <a href="#">Body Enfant Garçon</a>
-                    </h3>
-                    <div class="price">5,00 €
-                    </div>
-                    <br>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-                <div class="product-grid">
-                    <div class="product-image">
-
-                        <img class="pic-1" src="https://i.etsystatic.com/7469826/r/il/e08f4c/1464410287/il_570xN.1464410287_fa3s.jpg">
-                        <img class="pic-2" src="https://i.etsystatic.com/7469826/r/il/e43fb9/1685703290/il_570xN.1685703290_5fti.jpg">
-
-                        <ul class="social">
-                            <li>
-                                <a href="#/detailarticle" data-tip="Détails">
-                                    <i class="fa fa-search"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a (click)="openDialog()" data-tip="Ajouter au panier">
-                                    <i class="fas fa-shopping-bag"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="product-content">
-                        <h3 class="title">
-                            <a href="#">Body Enfant Garçon</a>
-                        </h3>
-                        <div class="price">5,00 €
-                        </div>
-                        <br>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                    <div class="product-grid">
-                        <div class="product-image">
-
-                            <img class="pic-1" src="https://i.etsystatic.com/7469826/r/il/e08f4c/1464410287/il_570xN.1464410287_fa3s.jpg">
-                            <img class="pic-2" src="https://i.etsystatic.com/7469826/r/il/e43fb9/1685703290/il_570xN.1685703290_5fti.jpg">
-
-                            <ul class="social">
-                                <li>
-                                    <a href="#/detailarticle" data-tip="Détails">
-                                        <i class="fa fa-search"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a (click)="openDialog()" data-tip="Ajouter au panier">
-                                        <i class="fas fa-shopping-bag"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="product-content">
-                            <h3 class="title">
-                                <a href="#">Body Enfant Garçon</a>
-                            </h3>
-                            <div class="price">5,00 €
-                            </div>
-                            <br>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                        <div class="product-grid">
-                            <div class="product-image">
-
-                                <img class="pic-1" src="https://i.etsystatic.com/7469826/r/il/e08f4c/1464410287/il_570xN.1464410287_fa3s.jpg">
-                                <img class="pic-2" src="https://i.etsystatic.com/7469826/r/il/e43fb9/1685703290/il_570xN.1685703290_5fti.jpg">
-
-                                <ul class="social">
-                                    <li>
-                                        <a href="#/detailarticle" data-tip="Détails">
-                                            <i class="fa fa-search"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a (click)="openDialog()" data-tip="Ajouter au panier">
-                                            <i class="fas fa-shopping-bag"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="product-content">
-                                <h3 class="title">
-                                    <a href="#">Body Enfant Garçon</a>
-                                </h3>
-                                <div class="price">5,00 €
-                                </div>
-                                <br>
-                            </div>
-                        </div>
-                    </div>
-        <div class="col-md-3 col-sm-6">
-            <div class="product-grid">
-                <div class="product-image">
-
-                    <img class="pic-1" src="https://i.etsystatic.com/7469826/r/il/e08f4c/1464410287/il_570xN.1464410287_fa3s.jpg">
-                    <img class="pic-2" src="https://i.etsystatic.com/7469826/r/il/e43fb9/1685703290/il_570xN.1685703290_5fti.jpg">
-
-                    <ul class="social">
-                        <li>
-                            <a href="#/detailarticle" data-tip="Détails">
-                                <i class="fa fa-search"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a (click)="openDialog()" data-tip="Ajouter au panier">
-                                <i class="fas fa-shopping-bag"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="product-content">
-                    <h3 class="title">
-                        <a href="#">Body Enfant Garçon</a>
-                    </h3>
-                    <div class="price">5,00 €
-                    </div>
-                    <br>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
+  </div>

@@ -1,11 +1,21 @@
+import { Article } from "./article";
+
 export class Panier {
 
-    constructor(
-      public id? : Number,
-      public articleBean? : string,
-      public commandeBean? : string,
+  public id? : string
+  public listeArticle? : Article[]
+  public commandeBean? : string
 
-    ) {}
+    constructor(
+      id : string,
+      listeArticle : Article[],
+      commandeBean : string,
+
+    ) {
+      this.id = id;
+      this.listeArticle = listeArticle;
+      this.commandeBean = commandeBean;
+    }
   
   
   }

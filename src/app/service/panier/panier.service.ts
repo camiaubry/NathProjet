@@ -15,7 +15,21 @@ export class PanierService {
     return this.http.delete(this.url) as Observable<any>;
   }
 
+  create(panier : Panier):Observable<any>{
+    return this.http.post<Panier>(this.url,panier) as Observable<any>
+  }
+
+  update(panier : Panier):Observable<any>{
+    return this.http.put<Panier>(this.url,panier) as Observable<any>
+  }
+
+  getById(panier):Observable<any>{
+    console.log(panier)
+    return this.http.get<Panier>(this.url + '/'+ panier) as Observable<any>
+  }
+
   getAll():Observable<any>{
     return this.http.get(this.url) as Observable<any>;
   }
+
 }
