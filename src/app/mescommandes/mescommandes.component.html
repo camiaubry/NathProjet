@@ -1,231 +1,88 @@
 <div class="section3">
-  <div class="container">
-    <div class="row">
-      <div>
-        <p class="bold2">COMMANDES </p>
-          <p class="minuscule">Consultez l'historique de vos commandes et vos commandes en cours ici.</p>
-      <div>
-          <mat-accordion>
+    <div class="container">
+      <div class="row">
+        <div>
+          <p class="bold2">
+            COMMANDES 
+          </p>
+          <p class="minuscule">
+            Consultez l'historique de vos commandes et vos commandes en cours ici.
+          </p>
+          <div>
+            <mat-accordion *ngFor="let commande of listeCommandes">
               <mat-expansion-panel>
                 <mat-expansion-panel-header>
                   <mat-panel-title>
-                    <p class="margin">Référence de commande 001 / 02-02-2019</p>
+                    <p class="margin">
+                      Référence de commande {{commande.facture}} / {{commande.date}}
+                    </p>
                   </mat-panel-title>
                   <mat-panel-description>
-                    <p class="status">✓ Livré</p>
+                    <p class="status">
+                        ✓ {{commande.statusSuivi}}
+                    </p>
                   </mat-panel-description>
                 </mat-expansion-panel-header>
                 <mat-panel-description>
-                      <div class="row">
-                          <div class="col-xs-6 bold">E-mail :&nbsp;</div>
-                          <div class="col-xs-6">email@gmail.com</div>
-                        </div>
-                          <div class="row">
-                            <div class="col-xs-4 bold">Date commande :&nbsp;</div>
-                            <div class="col-xs-8">02-02-2019</div>
-                          </div>
-                  </mat-panel-description>
-
-                  <mat-panel-description>
-                      <div class="row">
-                          <div class="col-xs-6 marge bold">Numéro de la commande :&nbsp;</div>
-                          <div class="col-xs-6">001</div>
-                        </div>
-
-                  </mat-panel-description>
-
-                  <mat-panel-description>
-                  <div class="row">
-                      <div class="col-xs-6 marge2 bold">Numéro de suivi :&nbsp;</div>
-                      <div class="col-xs-6 ">0875421875421754</div>
+                  <div class="row">
+                    <div class="col-xs-6 bold">
+                      E-mail :&nbsp;
                     </div>
-                  </mat-panel-description>
-
-                  <mat-panel-description>
-                      <div class="row">
-                          <div class="col-xs-6 marge bold">Total de la commande :&nbsp;</div>
-                          <div class="col-xs-6">12,00 €</div>
-                        </div>
-                  </mat-panel-description>
-
-
-                  <mat-panel-description>
-                      <div class="rowbutton">
-                          <button mat-button class="col-xs-6 marge button">Suivi de commande</button>
-                          <button mat-button class="col-xs-6 button2">Facture</button>
-                        </div>
-
+                    <div class="col-xs-6">
+                        {{commande.client.email}}
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-4 bold">
+                      Date commande :&nbsp;
+                    </div>
+                    <div class="col-xs-8">
+                      {{commande.date}}
+                    </div>
+                  </div>
                 </mat-panel-description>
-
+                <mat-panel-description>
+                  <div class="row">
+                    <div class="col-xs-6 marge bold">
+                      Numéro de la commande :&nbsp;
+                    </div>
+                    <div class="col-xs-6">
+                      {{commande.commande}}
+                    </div>
+                  </div>
+                </mat-panel-description>
+                <mat-panel-description>
+                  <div class="row">
+                    <div class="col-xs-6 marge2 bold">
+                      Numéro de suivi :&nbsp;
+                    </div>
+                    <div class="col-xs-6 ">
+                      {{commande.numeroSuivi}}
+                    </div>
+                  </div>
+                </mat-panel-description>
+                <mat-panel-description>
+                  <div class="row">
+                    <div class="col-xs-6 marge bold">
+                      Total de la commande :&nbsp;
+                    </div>
+                    <div class="col-xs-6">
+                      {{commande.total}} €
+                    </div>
+                  </div>
+                </mat-panel-description>
+                <mat-panel-description>
+                  <div class="rowbutton">
+                    <button mat-button class="col-xs-6 marge button">Suivi de commande</button>
+                    <button mat-button class="col-xs-6 button2">Facture</button>
+                  </div>
+                </mat-panel-description>
               </mat-expansion-panel>
-              <mat-expansion-panel (opened)="panelOpenState = true"
-                                   (closed)="panelOpenState = false">
-              </mat-expansion-panel>
+              <mat-expansion-panel (opened)="panelOpenState = true"(closed)="panelOpenState = false"></mat-expansion-panel>
             </mat-accordion>
-
-            <mat-accordion>
-                <mat-expansion-panel>
-                  <mat-expansion-panel-header>
-                    <mat-panel-title>
-                      <p class="margin">Référence de commande 018 / 08-06-2019</p>
-                    </mat-panel-title>
-                    <mat-panel-description>
-                      <p class="encours">o En route</p>
-                    </mat-panel-description>
-                  </mat-expansion-panel-header>
-                  <mat-panel-description>
-                        <div class="row">
-                            <div class="col-xs-6 bold">E-mail :&nbsp;</div>
-                            <div class="col-xs-6">email@gmail.com</div>
-                          </div>
-                            <div class="row">
-                              <div class="col-xs-4 bold">Date commande :&nbsp;</div>
-                              <div class="col-xs-8">02-02-2019</div>
-                            </div>
-                    </mat-panel-description>
-
-                    <mat-panel-description>
-                        <div class="row">
-                            <div class="col-xs-6 marge bold">Numéro de la commande :&nbsp;</div>
-                            <div class="col-xs-6">001</div>
-                          </div>
-
-                    </mat-panel-description>
-
-                    <mat-panel-description>
-                    <div class="row">
-                        <div class="col-xs-6 marge2 bold">Numéro de suivi :&nbsp;</div>
-                        <div class="col-xs-6 ">0875421875421754</div>
-                      </div>
-                    </mat-panel-description>
-
-                    <mat-panel-description>
-                        <div class="row">
-                            <div class="col-xs-6 marge bold">Total de la commande :&nbsp;</div>
-                            <div class="col-xs-6">12,00 €</div>
-                          </div>
-                    </mat-panel-description>
-
-
-                    <mat-panel-description>
-                        <div class="rowbutton">
-                            <button mat-button class="col-xs-6 marge button">Suivi de commande</button>
-                            <button mat-button class="col-xs-6 button2">Facture</button>
-                          </div>
-                    </mat-panel-description>
-                </mat-expansion-panel>
-                <mat-expansion-panel (opened)="panelOpenState = true"
-                                     (closed)="panelOpenState = false">
-                </mat-expansion-panel>
-              </mat-accordion>
-
-              <mat-accordion>
-                  <mat-expansion-panel>
-                    <mat-expansion-panel-header>
-                      <mat-panel-title>
-                        <p class="margin">Référence de commande 018 / 08-06-2019</p>
-                      </mat-panel-title>
-                      <mat-panel-description>
-                        <p class="validation">► En cours</p>
-                      </mat-panel-description>
-                    </mat-expansion-panel-header>
-                    <mat-panel-description>
-                          <div class="row">
-                              <div class="col-xs-6 bold">E-mail :&nbsp;</div>
-                              <div class="col-xs-6">email@gmail.com</div>
-                            </div>
-                              <div class="row">
-                                <div class="col-xs-4 bold">Date commande :&nbsp;</div>
-                                <div class="col-xs-8">02-02-2019</div>
-                              </div>
-                      </mat-panel-description>
-
-                      <mat-panel-description>
-                          <div class="row">
-                              <div class="col-xs-6 marge bold">Numéro de la commande :&nbsp;</div>
-                              <div class="col-xs-6">001</div>
-                            </div>
-
-                      </mat-panel-description>
-
-                      <mat-panel-description>
-                      <div class="row">
-                          <div class="col-xs-6 marge2 bold">Numéro de suivi :&nbsp;</div>
-                          <div class="col-xs-6 ">0875421875421754</div>
-                        </div>
-                      </mat-panel-description>
-
-                      <mat-panel-description>
-                          <div class="row">
-                              <div class="col-xs-6 marge bold">Total de la commande :&nbsp;</div>
-                              <div class="col-xs-6">12,00 €</div>
-                            </div>
-                      </mat-panel-description>
-
-
-                      <mat-panel-description>
-                          <div class="rowbutton">
-                              <button mat-button (click)="openDialog()" class="button">Annuler votre commande</button>
-                            </div>
-                      </mat-panel-description>
-                  </mat-expansion-panel>
-                  <mat-expansion-panel (opened)="panelOpenState = true"
-                                       (closed)="panelOpenState = false">
-                  </mat-expansion-panel>
-                </mat-accordion>
-
-
-              <mat-accordion>
-                  <mat-expansion-panel>
-                    <mat-expansion-panel-header>
-                      <mat-panel-title>
-                        <p class="margin">Référence de commande 089 / 25-08-2019</p>
-                      </mat-panel-title>
-                      <mat-panel-description>
-                        <p class="annuler">x Annulé</p>
-                      </mat-panel-description>
-                    </mat-expansion-panel-header>
-                    <mat-panel-description>
-                          <div class="row">
-                              <div class="col-xs-6 bold">E-mail :&nbsp;</div>
-                              <div class="col-xs-6">email@gmail.com</div>
-                            </div>
-                              <div class="row">
-                                <div class="col-xs-4 bold">Date commande :&nbsp;</div>
-                                <div class="col-xs-8">02-02-2019</div>
-                              </div>
-                      </mat-panel-description>
-
-                      <mat-panel-description>
-                          <div class="row">
-                              <div class="col-xs-6 marge bold">Numéro de la commande :&nbsp;</div>
-                              <div class="col-xs-6">001</div>
-                            </div>
-
-                      </mat-panel-description>
-
-                      <mat-panel-description>
-                      <div class="row">
-                          <div class="col-xs-6 marge2 bold">Numéro de suivi :&nbsp;</div>
-                          <div class="col-xs-6 ">---------------------------------</div>
-                        </div>
-                      </mat-panel-description>
-
-                      <mat-panel-description>
-                          <div class="row">
-                              <div class="col-xs-6 marge bold">Total de la commande :&nbsp;</div>
-                              <div class="col-xs-6">12,00 €</div>
-                            </div>
-                      </mat-panel-description>
-
-                  </mat-expansion-panel>
-                  <mat-expansion-panel (opened)="panelOpenState = true"
-                                       (closed)="panelOpenState = false">
-                  </mat-expansion-panel>
-                </mat-accordion>
-
+          </div>
+        </div>
       </div>
     </div>
-    </div>
   </div>
-</div>
+  

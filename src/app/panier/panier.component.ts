@@ -51,9 +51,9 @@ export class PanierComponent implements OnInit {
   }
 
   modifier() {
-    const panier = new Panier();
-    panier.articleBean = this.articleBean;
-    panier.commandeBean = this.commandeBean;
+    // const panier = new Panier();
+    // panier.articleBean = this.articleBean;
+    // panier.commandeBean = this.commandeBean;
     const article = new Article();
     article.titre = this.titre;
     article.categorie = this.categorie;
@@ -63,9 +63,14 @@ export class PanierComponent implements OnInit {
     article.photo = this.photo;
     article.marque = this.marque;
     article.qualite = this.qualite;
+<<<<<<< HEAD
     this.panierService.delete(panier).subscribe(client=>{
       console.log(panier)
     });
+=======
+    // this.panierService.delete(panier).subscribe(client=>{
+    //   console.log(panier)});
+>>>>>>> get profil / commandes / article / admin commande / admin liste article
 
   }
 

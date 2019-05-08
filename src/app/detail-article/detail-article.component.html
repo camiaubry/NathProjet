@@ -19,21 +19,21 @@
                   </div>
               <div class="col-sm-6">
                  <div class="con1">
-                    <h2>BODY - STARS  WARS</h2>
+                    <h2>{{article.titre}}</h2>
                     <div class="tags">
                       <div class="tg">
                          <div class="tgimg"></div>
                          <div class="tgcon">
-                           <span>Description de l'article</span>
-                           <p>Taille : 6 mois</p>
-                           <p>Marque : IKKS</p>
-                           <p>Etat du produit : Excellent</p>
+                           <span>description : {{article.description}}</span>
+                           <p>Taille : {{article.age}}</p>
+                           <p>Marque : {{article.marque}}</p>
+                           <p>Etat du produit : {{article.qualite}}</p>
                          </div>
                          <div class="clear"></div>
                       </div>
                        <div class="tg">
                          <div class="tgcon">
-                           <span class="prout2">PRIX : 5 EUROS TTC</span>
+                           <span class="prout2">PRIX : {{article.prix}} EUROS TTC</span>
                          </div>
                          <div class="clear"></div>
                       </div>

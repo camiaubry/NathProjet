@@ -11,7 +11,11 @@ export class Article {
     public photo2?: Blob,
     public marque?: string,
     public qualite?: string,
+<<<<<<< HEAD
     public genre?:string
+=======
+    public description?: string,
+>>>>>>> get profil / commandes / article / admin commande / admin liste article
   ) {}
 
 

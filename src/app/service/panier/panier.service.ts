@@ -24,7 +24,6 @@ export class PanierService {
   }
 
   getById(panier):Observable<any>{
-    console.log(panier)
     return this.http.get<Panier>(this.url + '/'+ panier) as Observable<any>
   }
 

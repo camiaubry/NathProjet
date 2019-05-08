@@ -1,6 +1,8 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
 import {MatPaginator, MatTableDataSource, MatSort,MatDialog} from '@angular/material';
 import { AdminListeArticleDialogueComponent } from '../admin-liste-article-dialogue/admin-liste-article-dialogue.component';
+import { Article } from '../model/article';
+import { ArticleService } from '../service/article/article.service';
 
 @Component({
   selector: 'app-admin-liste-article',
@@ -8,13 +10,14 @@ import { AdminListeArticleDialogueComponent } from '../admin-liste-article-dialo
   styleUrls: ['./admin-liste-article.component.css']
 })
 export class AdminListeArticleComponent implements OnInit {
-  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol','prout','prout2'];
-  dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
+  displayedColumns: string[] = ['titre', 'categorie', 'age', 'marque','prix','MAJ'];
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;
 
-  constructor(public dialog: MatDialog) {}
+  dataSource = new MatTableDataSource<Article>();
+
+  constructor(public dialog: MatDialog, public articleService: ArticleService) {}
 
 
   openDialog() {
@@ -25,25 +28,10 @@ export class AdminListeArticleComponent implements OnInit {
   ngOnInit() {
     this.dataSource.paginator = this.paginator;
     this.dataSource.sort = this.sort;
+    this.articleService.getAll().subscribe(data => {
+      this.dataSource.data = data;
+      console.log(data)
+    })
   }
 }
 
-export interface PeriodicElement {
-  name: string;
-  position: number;
-  weight: number;
-  symbol: string;
-  prout:string;
-  prout2:string;
-}
-
-const ELEMENT_DATA: PeriodicElement[] = [
-  {position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H', prout:'prout', prout2:'prout'},
-  {position: 2, name: 'Helium', weight: 4.0026, symbol: 'He', prout:'prout', prout2:'prout'},
-  {position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li', prout:'prout', prout2:'prout'},
-  {position: 4, name: 'Lithium', weight: 6.941, symbol: 'Li', prout:'prout', prout2:'prout'},
-  {position: 5, name: 'Lithium', weight: 6.941, symbol: 'Li', prout:'prout', prout2:'prout'},
-  {position: 6, name: 'Lithium', weight: 6.941, symbol: 'Li', prout:'prout', prout2:'prout'},
-  {position: 7, name: 'Lithium', weight: 6.941, symbol: 'Li', prout:'prout', prout2:'prout'},
-  {position: 8, name: 'Lithium', weight: 6.941, symbol: 'Li', prout:'prout', prout2:'prout'},
-];

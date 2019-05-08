@@ -6,27 +6,27 @@
           <form class="example-form">
 
             <mat-form-field class="example-full-width">
-              <input matInput placeholder="Nom :" value="Dupont" [(ngModel)]="nom" name="nom" />
+              <input matInput placeholder="Nom :" value="{{client.nom}}" [(ngModel)]="nom" name="nom" />
             </mat-form-field>
 
             <mat-form-field class="example-full-width">
-              <input matInput placeholder="Prénom :" value="Martine" [(ngModel)]="prenom" name="prenom" />
+              <input matInput placeholder="Prénom :" value="{{client.prenom}}" [(ngModel)]="prenom" name="prenom" />
             </mat-form-field>
 
             <mat-form-field class="example-full-width">
-            <input matInput placeholder="Adresse :" value="2 rue des petits prouts" [(ngModel)]="rue" name="rue">
+            <input matInput placeholder="Adresse :" value="{{adresse.rue}}" [(ngModel)]="rue" name="rue">
             </mat-form-field>
 
            <mat-form-field class="example-full-width">
-              <input matInput placeholder="Code Postal :" value="63000" [(ngModel)]="cp" name="cp" />
+              <input matInput placeholder="Code Postal :" value="{{adresse.cp}}" [(ngModel)]="cp" name="cp" />
             </mat-form-field>
 
             <mat-form-field class="example-full-width">
-              <input matInput placeholder="Ville :" value="Clermont-Ferrand" [(ngModel)]="ville" name="ville" />
+              <input matInput placeholder="Ville :" value="{{adresse.ville}}" [(ngModel)]="ville" name="ville" />
             </mat-form-field>
 
            <mat-form-field class="example-full-width">
-              <input matInput placeholder="E-mail :" value="dupont.martine@mail.com" [(ngModel)]="email" name="email"/>
+              <input matInput placeholder="E-mail :" value="{{client.email}}" [(ngModel)]="email" name="email"/>
             </mat-form-field>
           </form>
 

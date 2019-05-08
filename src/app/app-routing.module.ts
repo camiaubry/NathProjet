@@ -39,7 +39,7 @@ const routes: Routes = [
   { path: 'renouvellementmp', component: RenouvellementmpComponent },
   { path: 'avis', component: AvisComponent },
   { path: 'listearticle', component: ListeArticleComponent},
-  { path: 'detailarticle', component: DetailArticleComponent},
+  { path: 'listearticle/#/detailarticle/:id', component: DetailArticleComponent},
   { path: 'panier', component: PanierComponent},
   { path: 'commande', component: CommandeComponent},
   { path: 'admin-liste-article', component: AdminListeArticleComponent},

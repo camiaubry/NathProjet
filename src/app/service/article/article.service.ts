@@ -14,9 +14,12 @@ export class ArticleService {
     return this.http.get(this.url) as Observable<any>;
   }
 
-  create(article : Article){
-    return this.http.post<Article>(this.url,article) as Observable<any>
+  create(article : Article): Observable<any> {
+    return this.http.post<Article>(this.url,article) as Observable<any>;
 
   }
 
+  getArticle(id : Number):Observable<any>{
+    return this.http.get(this.url + '/'+ id) as Observable<any>;
+  }
 }
