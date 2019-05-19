@@ -19,4 +19,8 @@ export class ClientService {
   getAll():Observable<any>{
     return this.http.get(this.url) as Observable<any>;
   }
+
+  getClient(id : Number):Observable<any>{
+    return this.http.get(this.url + '/'+ id) as Observable<any>;
+  }
 }

@@ -54,6 +54,7 @@ export class PanierComponent implements OnInit {
   }
 
   modifier() {
+
     const panier = new Panier();
     panier.commandeBean = this.commandeBean;
     const article = new Article();

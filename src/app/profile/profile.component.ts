@@ -24,33 +24,36 @@ export class ProfileComponent implements OnInit {
   numero: Number;
   rue: string;
 
+  client = new Client();
+  adresse = new Adresse();
+
   constructor(private clientService : ClientService, private adresseService : AdresseService) { }
 
   ngOnInit() {
-    this.clientService.getAll().subscribe(client=>{
-      console.log(client)});
-    this.adresseService.getAll().subscribe(adresse=>{
-        console.log(adresse)});
+    this.clientService.getClient(1).subscribe(client=>{
+      this.client = client; })
+    this.adresseService.getAdresse(1).subscribe(adresse=>{
+      this.adresse = adresse;
+    })
   }
 
   modifier() {
-    const client = new Client();
-    client.nom = this.nom;
-    client.prenom = this.nom;
-    client.telephone = this.telephone;
-    client.email = this.email;
-    const adresse = new Adresse();
-    adresse.cp = this.cp;
-    adresse.ville = this.ville;
-    adresse.pays = this.pays;
-    adresse.rue = this.rue;
-    this.clientService.update(client).subscribe(client=>{
+    this.client.nom = this.nom;
+    this.client.prenom = this.nom;
+    this.client.telephone = this.telephone;
+    this.client.email = this.email;
+
+    this.adresse.cp = this.cp;
+    this.adresse.ville = this.ville;
+    this.adresse.pays = this.pays;
+    this.adresse.rue = this.rue;
+    this.clientService.update(this.client).subscribe(client=>{
       console.log(client)});
-    this.adresseService.update(adresse).subscribe(adresse=>{
+    this.adresseService.update(this.adresse).subscribe(adresse=>{
         console.log(adresse)});
 
-    console.log(client);
-    console.log(adresse);
+    console.log(this.client);
+    console.log(this.adresse);
   }
 
 }

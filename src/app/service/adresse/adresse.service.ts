@@ -19,4 +19,8 @@ export class AdresseService {
     getAll():Observable<any>{
       return this.http.get(this.url) as Observable<any>;
     }
+
+    getAdresse(id : Number):Observable<any>{
+      return this.http.get(this.url + '/'+ id) as Observable<any>;
+    }
   }

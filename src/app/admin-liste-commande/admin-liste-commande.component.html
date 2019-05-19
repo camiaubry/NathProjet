@@ -10,38 +10,38 @@
     </div>
         <table mat-table class="fixed" [dataSource]="dataSource"  matSort>
           <!-- Position Column -->
-          <ng-container matColumnDef="position">
+          <ng-container matColumnDef="commande">
             <th mat-header-cell *matHeaderCellDef mat-sort-header> No Commande </th>
-            <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+            <td mat-cell *matCellDef="let element"> {{element.commande}} </td>
           </ng-container>
 
           <!-- Name Column -->
-          <ng-container matColumnDef="name">
+          <ng-container matColumnDef="client">
             <th mat-header-cell *matHeaderCellDef mat-sort-header> Client </th>
-            <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+            <td mat-cell *matCellDef="let element"> {{element.client.nom}} {{element.client.prenom}} </td>
           </ng-container>
 
           <!-- Weight Column -->
-          <ng-container matColumnDef="weight">
+          <ng-container matColumnDef="date">
             <th mat-header-cell *matHeaderCellDef mat-sort-header> Date </th>
-            <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+            <td mat-cell *matCellDef="let element"> {{element.date}} </td>
           </ng-container>
 
           <!-- Symbol Column -->
-          <ng-container matColumnDef="symbol">
+          <ng-container matColumnDef="statusSuivi">
             <th mat-header-cell *matHeaderCellDef mat-sort-header> Status Commande </th>
-            <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+            <td mat-cell *matCellDef="let element"> {{element.statusSuivi}} </td>
           </ng-container>
 
           <!-- Symbol Column -->
-          <ng-container matColumnDef="prout">
+          <ng-container matColumnDef="numeroSuivi">
             <th mat-header-cell *matHeaderCellDef mat-sort-header> Suivis</th>
-            <td mat-cell *matCellDef="let element"> {{element.prout}} </td>
+            <td mat-cell *matCellDef="let element"> {{element.numeroSuivi}} </td>
           </ng-container>
           
 
           <!-- Symbol Column -->
-          <ng-container matColumnDef="prout2">
+          <ng-container matColumnDef="MAJ">
             <th mat-header-cell *matHeaderCellDef mat-sort-header> Mise à jour</th>
             <td mat-cell *matCellDef="let element"><button mat-button (click)="openDialog()"><i class="fas fa-pencil-alt"></i></button></td>
           </ng-container>

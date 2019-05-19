@@ -31,6 +31,7 @@ export class ListeArticleComponent implements OnInit {
       console.log(data)
     })
   }
+  
 
   ajoutPanier(article) {
     const id = Math.floor(Date.now()/1000).toString();
