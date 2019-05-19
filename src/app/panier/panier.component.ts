@@ -39,6 +39,9 @@ export class PanierComponent implements OnInit {
     this.secondFormGroup = this._formBuilder.group({
       secondCtrl: ['', Validators.required]
     });
+
+
+
   }
 
   Click() {
@@ -52,7 +55,6 @@ export class PanierComponent implements OnInit {
 
   modifier() {
     const panier = new Panier();
-    panier.articleBean = this.articleBean;
     panier.commandeBean = this.commandeBean;
     const article = new Article();
     article.titre = this.titre;
@@ -63,6 +65,7 @@ export class PanierComponent implements OnInit {
     article.photo = this.photo;
     article.marque = this.marque;
     article.qualite = this.qualite;
+    panier.listeArticle.push(article);
     this.panierService.delete(panier).subscribe(client=>{
       console.log(panier)
     });

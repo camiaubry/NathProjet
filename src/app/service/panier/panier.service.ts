@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {HttpClient} from "@angular/common/http";
+import {HttpClient, HttpHeaders} from "@angular/common/http";
 import {Observable} from "rxjs";
 import { Panier } from '../../model/panier';
 @Injectable({
@@ -15,7 +15,7 @@ export class PanierService {
     return this.http.delete(this.url) as Observable<any>;
   }
 
-  create(panier : Panier):Observable<any>{
+  create(panier):Observable<any>{
     return this.http.post<Panier>(this.url,panier) as Observable<any>
   }
 
