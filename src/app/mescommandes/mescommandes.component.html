@@ -9,18 +9,22 @@
             Consultez l'historique de vos commandes et vos commandes en cours ici.
           </p>
           <div>
-            <mat-accordion *ngFor="let commande of listeCommandes">
-              <mat-expansion-panel>
-                <mat-expansion-panel-header>
+            <mat-accordion >
+              <mat-expansion-panel *ngFor="let commande of listeCommandes">
+                <mat-expansion-panel-header >
                   <mat-panel-title>
                     <p class="margin">
-                      Référence de commande {{commande.facture}} / {{commande.date}}
+                      Référence de commande {{commande.facture}} - {{commande.date | date: 'dd/MM/yyyy'}}
                     </p>
                   </mat-panel-title>
                   <mat-panel-description>
-                    <p class="status">
-                        ✓ {{commande.statusSuivi}}
-                    </p>
+                    <p [ngClass]="{
+                      'validation':commande.statusSuivi === 'En cours',
+                      'annuler':commande.statusSuivi === 'Annulé',
+                      'encours':commande.statusSuivi === 'En route',
+                      'status':commande.statusSuivi === 'Livré'
+                    }">{{commande.statusSuivi}}
+
                   </mat-panel-description>
                 </mat-expansion-panel-header>
                 <mat-panel-description>
@@ -37,7 +41,7 @@
                       Date commande :&nbsp;
                     </div>
                     <div class="col-xs-8">
-                      {{commande.date}}
+                      {{commande.date | date: 'dd/MM/yyyy'}}
                     </div>
                   </div>
                 </mat-panel-description>
@@ -85,4 +89,3 @@
       </div>
     </div>
   </div>
-  

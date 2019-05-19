@@ -62,6 +62,23 @@ ul {
 
 }
 
+
+p.encours:before {
+  content :"→ "
+}
+
+p.status:before {
+  content :"✓ "
+}
+
+p.validation:before {
+   content :"o "
+ }
+
+p.annuler:before {
+  content :"x "
+}
+
 .status
 {
   margin-top:16%;
