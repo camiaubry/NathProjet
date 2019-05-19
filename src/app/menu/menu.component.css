@@ -1,3 +1,12 @@
+.connexion{
+    content : "Connexion/ Inscription";
+}
+
+.deconnexion{
+    content :"Déconnexion";
+}
+
+
 .bold {
     font-weight: bold
 }
@@ -6,8 +15,12 @@
     margin-left:20%;
 }
 
-.param{
+.admin {
     margin-left:15%;
+}
+
+.param{
+    margin-left:0,5%;
 }
 
 .param2{

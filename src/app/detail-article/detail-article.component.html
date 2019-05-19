@@ -5,53 +5,51 @@
     <!------ Include the above in your HEAD tag ---------->
 
     <div class="section3">
-           <div class="container">
-              <div class="row">
-                  <div class="col-sm-5">
-                      <div class="product-grid">
-                          <div class="product-image">
-                              <a>
-                                  <img class="pic-1" src="https://i.etsystatic.com/7469826/r/il/e08f4c/1464410287/il_570xN.1464410287_fa3s.jpg">
-                                  <img class="pic-2" src="https://i.etsystatic.com/7469826/r/il/e43fb9/1685703290/il_570xN.1685703290_5fti.jpg">
-                              </a>
-                          </div>
-                      </div>
-                  </div>
-              <div class="col-sm-6">
-                 <div class="con1">
-                    <h2>{{article.titre}}</h2>
-                    <div class="tags">
-                      <div class="tg">
-                         <div class="tgimg"></div>
-                         <div class="tgcon">
-                           <span>description : {{article.description}}</span>
-                           <p>Taille : {{article.age}}</p>
-                           <p>Marque : {{article.marque}}</p>
-                           <p>Etat du produit : {{article.qualite}}</p>
-                         </div>
-                         <div class="clear"></div>
-                      </div>
-                       <div class="tg">
-                         <div class="tgcon">
-                           <span class="prout2">PRIX : {{article.prix}} EUROS TTC</span>
-                         </div>
-                         <div class="clear"></div>
-                      </div>
-                      <div class="tg">
-                          <div class="tgcon">
-
-                                 <button mat-button (click)="openDialog()" type="submit" class=" button login btn btn-default prout"><i class="fas fa-shopping-bag"></i>  Ajouter au panier</button>
-                          </div>
-                          <div class="clear"></div>
-                       </div>
-                       <div class="guideTaille">
-                            <button mat-button (click)="openDialog2()" type="submit" class="button login2 btn btn-default">Guide des tailles</button>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5">
+                    <div class="product-grid">
+                        <div class="product-image">
+                            <a>
+                                <img class="pic-1" src="https://i.etsystatic.com/7469826/r/il/e08f4c/1464410287/il_570xN.1464410287_fa3s.jpg">
+                                <img class="pic-2" src="https://i.etsystatic.com/7469826/r/il/e43fb9/1685703290/il_570xN.1685703290_5fti.jpg">
+                            </a>
                         </div>
                     </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="con1">
+                        <h2>{{article.titre}}</h2>
+                        <div class="tags">
+                            <div class="tg">
+                                <div class="tgimg"></div>
+                                <div class="tgcon">
+                                    <span>description : {{article.description}}</span>
+                                    <br>
+                                    <p>Taille : {{article.age}}</p>
+                                    <p>Marque : {{article.marque}}</p>
+                                    <p>Etat du produit : {{article.qualite}}</p>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="tg">
+                                <div class="tgcon">
+                                    <span class="prout2">PRIX : {{article.prix}} EUROS TTC</span>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="tg">
+                                <div class="tgcon">
 
-                 </div>
-              </div>
+                                    <button mat-button (click)="openDialog()" type="submit" class=" button login btn btn-default prout">
+                                        <i class="fas fa-shopping-bag"></i> Ajouter au panier</button>
+                                    <button mat-button (click)="openDialog2()" type="submit" class="button login2 btn btn-default guidetaille">Guide des tailles</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          </div>
-  </div>
+        </div>
+    </div>
+</div> -->

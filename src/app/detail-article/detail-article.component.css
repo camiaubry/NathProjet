@@ -1,7 +1,7 @@
   .container 		{
     font-family:'arial';
-    width:60%;
-    height: 75%;
+    width:55%;
+    height: 60%;
     margin:80px;
     margin-top:5%;
     margin-left:18%;
@@ -21,7 +21,15 @@
     font-weight: bold;
 
   }
-
+  
+  .guidetaille {
+    background-color:#25274d;
+    color:white;
+    margin: 40px 0;
+    z-index: 2;
+    border-radius: 50px;
+    overflow: hidden;
+  }
   /*-----------------------------------------------------------------------------------
 
  Graph chart
@@ -54,14 +62,14 @@
 }
 
 .prout {
-  margin-top:25%;
+  margin-top:15%;
   font-weight: bold;
   color:goldenrod;
 }
 
 .prout2 {
-  margin-top:20%;
-  margin-left:20%;
+  margin-top:6%;
+  margin-left:14%;
   font-weight: bold;
   color:goldenrod;
 }
@@ -146,7 +154,7 @@ h3.h3{text-align:center;margin:1em;text-transform:capitalize;font-size:1.7em;}
 
 
 .button.login {
-  left: 20%;
+  left: 10%;
   width: 60%;
 }
 
@@ -216,3 +224,8 @@ h3.h3{text-align:center;margin:1em;text-transform:capitalize;font-size:1.7em;}
 .btn btn-success pull-right {
   background-color:darkturquoise;
 }
+
+
+
+
+

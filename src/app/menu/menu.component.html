@@ -17,6 +17,25 @@
             <div class="logo">
                 <img alt="" class="desktop" src="assets/imgs2/logo.png" width="120px" height="70px"/>
             </div>
+            <div class="admin">
+                <button mat-button [matMenuTriggerFor]="admin">
+                    <div>
+                        <i class="fas fa-user-cog"></i> Admin</div>
+                </button>
+                <mat-menu #admin="matMenu">
+                    <a href="/#/admin-add-article">
+                    <button mat-menu-item>Ajout article</button>
+                    </a>
+
+                    <a href="/#/admin-liste-article">
+                        <button mat-menu-item>Liste article</button>
+                    </a>
+
+                    <a href="/#/admin-liste-commande">
+                        <button mat-menu-item>Liste commande</button>
+                    </a>
+                </mat-menu>
+            </div>
             <div class="param">
                 <button mat-button [matMenuTriggerFor]="menu">
                     <div>
