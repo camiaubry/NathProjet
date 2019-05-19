@@ -12,7 +12,7 @@
                 <i class="fas fa-search"></i>
             </button>
             <mat-form-field>
-                <input matInput placeholder=" Rechercher" value="">
+                <input matInput placeholder=" Rechercher" (keyup.enter)="rechercher(recherche)" value="recherche" [(ngModel)]="recherche">
             </mat-form-field>
             <div class="logo">
                 <img alt="" class="desktop" src="assets/imgs2/logo.png" width="120px" height="70px"/>

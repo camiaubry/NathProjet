@@ -22,4 +22,9 @@ export class ArticleService {
   getArticle(id : Number):Observable<any>{
     return this.http.get(this.url + '/'+ id) as Observable<any>;
   }
+
+  getArticleSearch(param : String):Observable<any>{
+    return this.http.get(this.url + '/search/'+ param) as Observable<any>;
+  }
+
 }

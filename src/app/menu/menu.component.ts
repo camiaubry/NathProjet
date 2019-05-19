@@ -1,6 +1,5 @@
-import {Component, OnInit, ChangeDetectorRef} from '@angular/core';
-import {MediaMatcher} from '@angular/cdk/layout';
-
+import {Component, OnInit} from '@angular/core';
+import {ArticleService} from "../service/article/article.service";
 
 @Component({
   selector: 'app-menu',
@@ -12,8 +11,11 @@ export class MenuComponent implements OnInit {
   isCollapsed : boolean = false;
 
   title = 'NathProjet';
+  recherche = '';
 
   mobileQuery: MediaQueryList;
+
+  constructor(private articleService : ArticleService) {}
 
   ngOnInit() {
   }
@@ -24,6 +26,13 @@ export class MenuComponent implements OnInit {
 
   redirectPanier(){
     window.location.href='/#/panier'
+  }
+
+  rechercher(param : String){
+    this.articleService.getArticleSearch(param).subscribe(data =>
+      console.log(data)
+      // Faire redirection sur listeArticle + passer en paramètre le data
+    )
   }
 
 }
